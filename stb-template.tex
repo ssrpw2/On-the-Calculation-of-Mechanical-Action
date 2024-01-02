@@ -1,7 +1,7 @@
 \documentclass{book}
 \usepackage{amsmath}
 \usepackage{comment}
-\usepackage[document]{ragged2e}
+\usepackage{ragged2e}
 \usepackage{fix-cm}  % this package allows large \fontsize
 \usepackage{tikz}    % this is for graphics. e.g. rectangle on title page
 
@@ -132,20 +132,25 @@ This book was typeset using \LaTeX{} software.\\
 % Do not show page numbers on colophon page
 \thispagestyle{empty}
 \newpage
-\begin{flushleft}
+%\begin{flushleft}
 \vspace*{\fill}
 \textbf{Foreword}
 \setlength{\parindent}{20pt}
 \vfill
 
-This book has been translated with the assistance of GPT-4, developed by OpenAi. I am extremely grateful to have access to such a technology. I have personally transcribed the French into text by reading the scanned document and typing it out. I had previously made attempts to use software to recognize text. However, this resulted in a large amount of error in the conversion from image to text, and it became easier to type it out manually. 
+This translation was assisted by GPT-4, an AI language model developed by OpenAI. GPT-4 provided valuable initial translations and suggestions, but the final text has been thoroughly proofread and edited by me to ensure accuracy and coherence. I am extremely grateful that I can access such advanced technology.
 
-The output from GPT 4 has been reviewed by me, and I have taken care to make minimal changes to the text so as to preserve the document. Only minor revisions were made to correct unnatural phrasing in small parts of the translation. I have indicated where I made changes in the Latex code for this document. 
+I have personally transcribed the scanned images of the original book, written in French, into text. Prior attempts to use text recognition software resulted in significant errors during the conversion from image to text. 
 
-I declined to translate the phrase "living force" into its modern form, "kinetic energy." I am quite fond of the historic phrase, and preferred keeping it intact throughout the book. I think living force is much too beautiful a phrase to remove from this book. 
+I have taken care to make minimal changes to the text to preserve the authenticity of the document. Minor revisions were undertaken to correct unnatural phrasing and to clarify mathematical terms and equations. Any changes made are indicated in the LaTeX code of this document.
 
-I have also taken much time to ensure the equations in this book are correct. Despite my best efforts, it is possible errors still remain in the translation. If any are discovered, or if there are suggestions for improvements in this book, please email me. I welcome any feedback for this. 
+The term "living force" was not translated into its modern equivalent, "kinetic energy." I am quite fond of this historical phrase and preferred to keep it intact. I think "living force" is a much too beautiful phrase to remove from this book. 
+
+Considerable effort has been put into ensuring the accuracy of the equations in this book. Despite these efforts, there may still be errors in the translation. If any are discovered, or if there are suggestions for improvements, please feel free to email me. I welcome and appreciate any feedback.
+
 \vfill
+
+
 
  \hfill Samantha White\\
 
@@ -155,7 +160,7 @@ I have also taken much time to ensure the equations in this book are correct. De
 
 \vspace{\fill}
 
-\end{flushleft}
+%\end{flushleft}
 
 % A title page resets the page # to 1, but the second title page
 % was actually page 3. So add two to page counter.
@@ -229,10 +234,14 @@ without at the same time producing other effects that consume in pure loss a par
 These effects, which are not inherent to the result to be obtained, can always be diminished, and one should seek to do so, stopping at the point where this reduction could not be carried out without causing too much increase in construction expenses. M. Coriolis has included at the end of this chapter very interesting tables containing results related to the quantities of work necessary for carrying out the main fabrications that are the object of the arts, as well as the quantities of work actually obtained from various engines. These results provide valuable elements to artists who are involved in the construction of machines, in establishments where the economy of force is an important consideration. We note, concerning the composition of such tables, that for them to present only accurate ideas to the reader, it seems necessary either to include all known observations or to report only average terms. Mixing some isolated experiments with the average terms given by authors would not be suitable for making the reader judge the result to be adopted. The verification and progressive improvement of these tables, through accurate observations stated with precision, is one of the most useful objectives towards which the attention of engineers can be directed.
 
 We will conclude here an analysis whose extent was necessary to give an idea of the new work that is the subject of this report. This work presents a very fine application of the general principles of Mechanics to one of the most useful objects for the progress of public wealth. The author, who combines a profound knowledge of these principles with the special knowledge that belongs to engineers, presents his ideas with the conciseness that the use of analytical language allows, and consequently this work is mainly intended for people who have undergone studies similar to those of the École Polytechnique. The theoretical notions presented in the teaching of this school are here applied directly to one of the main objects of concern to engineers, and the work in question is very well suited to show that these notions are not destined to remain sterile, and that, far from offering just a useful exercise for the development of the faculties of the mind, they are eminently suitable with regard to its extent, M. Coriolis treats each subject, even those that have been dealt with before him, in an accurate and ingenious manner that is his own. We think that his work is very worthy of the approval of the Academy, and that its publication will be very useful.
-\vfill
-\hfill Made in Paris, on June 8, 1829. \\
-\hfill Signed Baron DE PRONY, GIRARD, NAVIER (reporter).
+\vspace{10mm}
 
+\begin{flushright}
+
+ Made in Paris, on June 8, 1829. 
+\\
+Signed Baron DE PRONY, GIRARD, NAVIER (reporter).
+\end{flushright}
 
 
 
@@ -314,12 +323,31 @@ For curved-line motion, these same laws also lead to the conclusion that if a fo
 \]
 where \(X,Y,Z \) are the coordinates of the material point. Knowing the position of this point and its velocities in the direction of the axes at a certain instant, it suffices to be able to express at each instant the components \( X, Y, Z \) of the force acting on the free point to deduce, by integrating these three equations, the complete knowledge of the motion.
 
-With the aid of various considerations developed in the treatises on Mechanics, it is concluded from these equations that if one decomposes the force \( F \) into two components, one acting according to the tangent to the curve described, and the other according to the normal to this curve, the tangential component will be expressed as \( \displaystyle \frac{p}{g} \frac{d^2s}{dt^2} \), denoting by \( s \) the arc described by the moving point; the normal component will be expressed as \( \displaystyle \frac{p}{g} \frac{v^2}{r} \), where \( v \) is the velocity, and \( r \) is the radius of curvature.
+With the aid of various considerations developed in the treatises on Mechanics, it is concluded from these equations that if one decomposes the force \( F \) into two components, one acting according to the tangent to the curve described, and the other according to the normal to this curve, the tangential component will be expressed as \( \frac{p}{g} \frac{d^2s}{dt^2} \), denoting by \( s \) the arc described by the moving point; the normal component will be expressed as \( \frac{p}{g} \frac{v^2}{r} \), where \( v \) is the velocity, and \( r \) is the radius of curvature.
 
 
 
 
 \newpage
+
+(5)
+\\
+% Translated text
+\( s \) being the arc described by the moving point; its normal component will be expressed as \( \frac{p}{g} \cdot \frac{v^2}{r} \), denoting by \( v \) the velocity, and by \( r \) the radius of\\ curvature.(*) \footnote{(*) This decomposition is easily established in the following manner. The principles of differential calculus give
+\[
+\frac{d^2x}{dt^2} = \frac{d \left( \frac{dx}{dt} \right)}{dt} = \frac{d \left( \frac{dx}{ds} \right) \left( \frac{ds}{dt} \right)}{dt} = \frac{d^2x}{ds^2} \left( \frac{ds}{dt} \right)^2 + \frac{d^2s}{dt^2} \frac{dx}{ds}
+\]
+If we denote by \( \alpha \) the angle that the radius of curvature \( r \) of the curve described by the moving point makes with the x-axis, and by \( a \) the angle that the tangent to this curve makes with the same axis, it is known that we have \( \cos \alpha = \frac{1}{r} \frac{d^2x}{ds^2} \), and \( \cos a = \frac{dx}{ds} \): thus the previous equation becomes \( \frac{d^2x}{dt^2} = \frac{1}{r} \left( \frac{ds}{dt} \right)^2 \cos \alpha + \frac{d^2s}{dt^2} \cos a \). As we have similar equations for \( \frac{d^2y}{dt^2} \) and \( \frac{d^2z}{dt^2} \), it is concluded that the force that produces the movement of the moving point decomposes into two forces \( \frac{p}{g} \frac{1}{r} \left( \frac{ds}{dt} \right)^2 \), and \( \frac{p}{g} \frac{d^2s}{dt^2} \), one tangent and the other normal to the curve described.}
+
+The ratio \( \frac{p}{g} \) is what is called the mass; it is usually denoted, for brevity, by \( m \); however, it seemed to us that, to avoid the errors that could be caused in applications by the use of the mass \( m \), it was more appropriate, in this work, to let the weights appear, so that the kilogram is everywhere the unit of force.
+
+(5) To move on to the dynamics of a set of material points linked together in any manner, that is to say, to the study of the movement of a machine, it must be admitted that the same relationships that must exist between forces so that they do not produce movement when acting on points at rest linked together by certain geometrical conditions, are also those that must exist so that these forces do not modify in any way the movements that the same points linked in the same way would already have if they were solicited by other forces. For example, if two forces balance each other in a resting lever, when they are in the ratio of their distances to the fixed point, they will not modify 
+
+
+
+\newpage
+(6)\\
+in any way the movement that this lever could have, provided that they are always in this same ratio: it is in this sense that we will say that forces capable of producing equilibrium are forces that always destroy each other.
 
 
 \chapter{CHAPTER II}
