@@ -1,17 +1,24 @@
 \documentclass{book}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[LE,RO]{\thepage} % page number in the header
+\fancyhead[LO]{\nouppercase{\rightmark}} % section name on Odd pages (Left)
+\fancyhead[RE]{\nouppercase{\leftmark}} % chapter name on Even pages (Right)
+\renewcommand{\headrulewidth}{0.4pt} % header rule width
+\renewcommand{\footrulewidth}{0pt} % footer rule (set to 0pt if not needed)
+
 \usepackage{amsmath}
 \usepackage{comment}
 \usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
 \usepackage{fix-cm}  % this package allows large \fontsize
-\usepackage{tikz}    % this is for graphics. e.g. rectangle on title page
 
 
 \DeclareUnicodeCharacter{2212}{-}
-%\makeatletter
-%\renewcommand{\@seccntformat}[1]{}
-%\makeatother
-%\renewcommand{\numberline}[1]{}
 
+\clearpage
 \title{On the Calculation of Mechanical Action}
 \newcommand{\booksubtitle}{CONSIDERATIONS ON THE USE OF ENGINES AND THEIR EVALUATION, 
 TO SERVE AS AN INTRODUCTION TO THE SPECIAL STUDY OF MACHINES}
@@ -41,15 +48,15 @@ TO SERVE AS AN INTRODUCTION TO THE SPECIAL STUDY OF MACHINES}
 % Here is an alternative geometry for reading on letter size paper:
  \usepackage[margin=.75in, paperwidth=6.5 in, paperheight=9.5in]{geometry}
 
-\renewcommand{\contentsname}{Table of Contents} % default is {Contents}
-\usepackage{makeidx}
-\makeindex % Initialize an index so we can add entries with \index
-
 
 
 % Content Starts Here
 \begin{document}
 \frontmatter
+
+% Title page settings
+
+
 
 % ---- Half Title Page ----
 % current geometry will be restored after title page
@@ -63,11 +70,8 @@ TO SERVE AS AN INTRODUCTION TO THE SPECIAL STUDY OF MACHINES}
 % Draw a line 4pt high
 \par\noindent\rule{\textwidth}{4pt}\\
 
-% Subtitle
-% Shaded box from left to right. Text node is midway (centered).
 \textit{\booksubtitle}
 
-% Edition Number
 
     
 \Large By Coriolis, Civil Engineer
@@ -130,9 +134,10 @@ This book was typeset using \LaTeX{} software.\\
 %\restoregeometry
 % ---- End of Title Page ----
 
-% Do not show page numbers on colophon page
-\thispagestyle{empty}
+
+
 \newpage
+\thispagestyle{empty}
 %\begin{flushleft}
 \vspace*{\fill}
 \textbf{Foreword}
@@ -161,13 +166,7 @@ Considerable effort has been put into ensuring the accuracy of the equations in 
 
 \vspace{\fill}
 
-%\end{flushleft}
 
-% A title page resets the page # to 1, but the second title page
-% was actually page 3. So add two to page counter.
-%\addtocounter{page}{2}
-
-% The asterisk excludes chapter from the table of contents.
 \newpage
 \pagenumbering{roman}
 \textbf{REPORT}
@@ -200,8 +199,8 @@ In Chapter 1, the author briefly recalls the fundamental principles of Statics a
 apply to the denomination of work, as he has defined it, to the product of a transported weight, multiplied by the distance of transport, or in general to the product of a space traveled, multiplied by a force directed perpendicularly to this space; it is necessary to consider only the effort that is exerted in the direction of the traveled space.
 
 % Translated text
-The main object of Chapter II is the evaluation of the work that can be obtained from various natural agents, in cases where the forces they produce are immediately known. The author first considers the action of heavy bodies, whose result is given by the product of the sum of the weights, multiplied by the vertical displacement of their common center of gravity; that of springs and, in general, of elastic links interposed between the parts of a system, which is estimated by the product of the force acting from one point to another, multiplied by the variation of the distance between the two points. The examination of this latter action leads him to distinguish this quality of springs, which is designated by the name of stiffness, and whose mathematical expression should be given, according to M. Coriolis, by the ratio of the variation of the force soliciting the spring to the corresponding variation of the space described by the point of application of this force. It is noted that when two opposing forces are applied to a system in which several springs are interposed, it is always the less stiff springs whose compression or extension consumes the largest quantities of work. The author successively gives the expressions of the quantities of work corresponding to a certain variation in the volume of an elastic fluid, or which are due to the production of aqueous vapor at various temperatures, whether or not the facility of expansion of this fluid is exploited; those of the work due to the action of a fluid in motion, which encounters a plane or travels through a mobile channel, and finally the resistant work produced by the forces arising from frictions. Here, there is a very simple expression, not yet given, of the work consumed by the friction of gears; an expression which reduces to the integral of the product of the resistance of friction, multiplied by the variation of the distance of the contact points (*). If the resistance of friction can be assumed constant, the work in question is expressed by the product of the resistance of friction, multiplied by the difference of the arcs described respectively by the contact points on the contour of the teeth belonging to each wheel. This chapter is concluded by various general propositions relating to the evaluation of the quantities of work produced by given forces, and of the living force of a system. The author shows that two equivalent systems of force applied to a machine, that is, two systems of force such that one can pass from one to the other by applying forces that mutually balance each other, always produce equal quantities of work among themselves. This remark gives the explanation of the apparatus formed by a brake, which was proposed by M. de Prony, to determine, by experiment, the quantity of work transmitted to a rotating shaft. As for the evaluation of the living forces of a system; it is recognized that in general this living force can always be considered as being composed of two parts, one of which would be calculated by supposing all the bodies united in the center of gravity, and considering the absolute velocity of this center; the other, 
-\footnote{(*) This expression would be obtained immediately by noting that the resistance of friction can be likened to the force of a spring interposed between the two points in contact, and which opposes the separation of these points.}
+The main object of Chapter II is the evaluation of the work that can be obtained from various natural agents, in cases where the forces they produce are immediately known. The author first considers the action of heavy bodies, whose result is given by the product of the sum of the weights, multiplied by the vertical displacement of their common center of gravity; that of springs and, in general, of elastic links interposed between the parts of a system, which is estimated by the product of the force acting from one point to another, multiplied by the variation of the distance between the two points. The examination of this latter action leads him to distinguish this quality of springs, which is designated by the name of stiffness, and whose mathematical expression should be given, according to M. Coriolis, by the ratio of the variation of the force soliciting the spring to the corresponding variation of the space described by the point of application of this force. It is noted that when two opposing forces are applied to a system in which several springs are interposed, it is always the less stiff springs whose compression or extension consumes the largest quantities of work. The author successively gives the expressions of the quantities of work corresponding to a certain variation in the volume of an elastic fluid, or which are due to the production of aqueous vapor at various temperatures, whether or not the facility of expansion of this fluid is exploited; those of the work due to the action of a fluid in motion, which encounters a plane or travels through a mobile channel, and finally the resistant work produced by the forces arising from frictions. Here, there is a very simple expression, not yet given, of the work consumed by the friction of gears; an expression which reduces to the integral of the product of the resistance of friction, multiplied by the variation of the distance of the contact points (*).\footnote{(*) This expression would be obtained immediately by noting that the resistance of friction can be likened to the force of a spring interposed between the two points in contact, and which opposes the separation of these points.} If the resistance of friction can be assumed constant, the work in question is expressed by the product of the resistance of friction, multiplied by the difference of the arcs described respectively by the contact points on the contour of the teeth belonging to each wheel. This chapter is concluded by various general propositions relating to the evaluation of the quantities of work produced by given forces, and of the living force of a system. The author shows that two equivalent systems of force applied to a machine, that is, two systems of force such that one can pass from one to the other by applying forces that mutually balance each other, always produce equal quantities of work among themselves. This remark gives the explanation of the apparatus formed by a brake, which was proposed by M. de Prony, to determine, by experiment, the quantity of work transmitted to a rotating shaft. As for the evaluation of the living forces of a system; it is recognized that in general this living force can always be considered as being composed of two parts, one of which would be calculated by supposing all the bodies united in the center of gravity, and considering the absolute velocity of this center; the other, 
+
 \newpage
 (4)\\
 by supposing the center of gravity immobile, and considering the velocities of each body with respect to this point.
@@ -246,30 +245,53 @@ Signed Baron DE PRONY, GIRARD, NAVIER (reporter).
 
 
 
-
-
-
-
-% Three-level Table of Contents
+% Table of contents settings
 \tableofcontents
+
+
+
 \vfill
 Note. The articles marked with an asterisk * are those that are less related to general ideas about the effect of machines, and that we can pass on as desired.
 
+\clearpage % Reset after table of contents
 
-%\setcounter{tocdepth}{2}
 
 
 \mainmatter
+\pagestyle{fancy} % Reapply header/footer settings
+\newpage  % Start a new page
 
+% Your custom text here
+\begin{center}
+\large\textbf{ON THE}\\
+\vspace{3mm}
+\huge\textbf{CALCULATION}\\ 
+\vspace{3mm}
 
-\chapter{}
-% Translated text
-% Title
+\large\textbf{OF} \\ 
+\vspace{3mm}
 
+\huge\textbf{MECHANICAL ACTION}
+\end{center}
+\vspace{3mm}
 
-% Draw a line 4pt high
 \par\noindent\rule{\textwidth}{2pt}\\
-\textbf{Review of the Preliminaries of Dynamics - Equation of Living Forces. –Principle deduced for Machines considered from a rational point of view - Definition of Work as a quantity - How Work is used to measure the value of a faculty of movement or an engine - On the Unit of work. Distinction between Work and the horizontal Transport of burdens.}
+
+\vspace{5mm}
+
+% Manually formatted 'chapter' title
+\begin{center}
+\huge\bfseries CHAPTER I
+\end{center}
+\vspace{10mm} % Space after the chapter title
+\markboth{CHAPTER I}{}
+
+% Add the chapter to the table of contents
+\addcontentsline{toc}{chapter}{CHAPTER I}
+
+\textbf{Review of the Preliminaries of Dynamics - Equation of Living Forces.}
+
+\textbf{–Principle deduced for Machines considered from a rational point of view - Definition of Work as a quantity - How Work is used to measure the value of a faculty of movement or an engine - On the Unit of work. Distinction between Work and the horizontal Transport of burdens.}
 \vspace{26pt}
 \\
 (1) Machines can be studied from three different points of view: 1) by considering the forces that are produced in the state of equilibrium, as is done with the lever, the screw, the pulleys, and all the machines intended rather to exert great efforts than to produce movement; this is the domain of Statics; 2) by considering only displacement to understand the dependencies of movement, as is done in the study of different modes of movement transmission and all the mechanics that aim to supplement the skill of man; this 
@@ -363,12 +385,36 @@ Certain bodies, not being susceptible to changing shape substantially under very
 (7) \\
 that join moving masses, the chains, the fixed axes around which certain masses can only rotate, the gears that establish relations between two movements of rotation.
 
+\newpage
+(8)\\
+% Translated text
+We will therefore begin by first considering machines as a set of material points, whose movements must satisfy certain geometrical conditions that we will call connections.
 
-\chapter{}
+It is not useless to note that, if springs or any other mode of connection were interposed between two mobile bodies, which, without producing a perfect invariability of certain dimensions, and without introducing geometrical relations susceptible to being put into equation, would have no other effect than to develop forces of attraction or repulsion between the mobile points; although it results from these interposed springs or these attractions or repulsions a kind of connection between the mobile points, in the sense attached to this word according to ordinary language, however, one should not at all confuse these connections with those that we consider here. The latter are purely geometrical relations; the others, which result from springs and any other mode of attraction or repulsion, are considered in Mechanics only as means of producing forces that must be known a priori as a function of certain variables to be introduced as data in questions relating to motion. For the connections that we consider, we will see that on the contrary, one does not need to know the forces that they add to arrive at the determination of the motion; it is enough to fully understand all that the geometrical conditions introduced by these connections contain. Assuming that these conditions linking the coordinates of mobile points are put into equation, these equations always replace, in the search for motion, the knowledge of the forces that the connections they express add to those that are given as producing the motion.
+
+Sometimes, when it is impossible to know all the forces to which the motion we seek is due, and to solve the problem at least with some approximation, it is assumed that certain movements known in advance will necessarily be produced. We then pose certain equations where time enters with the coordinates of the mobile points, and we suppose that the movements necessitated by these equations must take place in a mandatory manner.
+
+
+\newpage
+\begin{center}
+\huge\bfseries CHAPTER II
+\end{center}
+\vspace{10mm} % Space after the chapter title
+\markboth{CHAPTER II}{}
+
+% Add the chapter to the table of contents
+\addcontentsline{toc}{chapter}{CHAPTER II}
 
 \textbf{Calculation of Work for Weights – For Mutual Actions – On Stiffness; its Influence on the Distribution of Work in Slow Compressions – On Work Produced by the Expansion of Gases; Application to the Calculation of Work Derived from Steam with a Given Amount of Heat – On Work Transmitted by a Fluid Current, to a Channel and to Moving Surfaces – On Work Due to Friction – Calculation of Living Force – The Principle of the Transmission of Work Still Applies to Certain Relative Movements.}
 \vspace{4mm}
-\section{33. Calculation of work due to the gravity of moving bodies.}
+
+% Manually formatted 'section' title
+\vspace{4mm}
+\textbf{33. Calculation of Work Due to the Gravity of Moving Bodies.}
+\vspace{4mm} 
+
+% Add the section to the table of contents
+\addcontentsline{toc}{section}{33. Calculation of work due to the gravity of moving bodies.}
 
 We will now focus on calculating work in different circumstances where it can be reduced to rules that can be stated.
 Let's first examine the work that is due to weights.
@@ -426,8 +472,20 @@ first placement has been occupied by other bodies equal in weight, and it is suf
 
 
 Thus, in the case of a current of water flowing in a canal, the work produced will be the same as if a mass of water had moved from the vacated position at the top to the newly occupied position at the bottom. For example, if a gate in a water reservoir is opened and one cubic meter of water is allowed to flow out horizontally, the work due to the very slight descent of all the water particles in the reservoir during the movement will be the same as if the cubic meter of water that flowed out had descended from the upper layer of the pond to occupy the space where it is found after the flow. This result is apparent without demonstration when water is drawn from the surface because then the cubic meter drawn indeed descends the entire height of the reservoir; but when a gate at the bottom is opened, it is not the water that occupied the upper layer that comes out through the gate, and nevertheless, the work produced has the same value as if it were that same water that had descended, without the rest of the liquid participating in the movement.
-\section{34. Work due to mutual reactions, such as springs, attractions or
+
+
+% Manually formatted 'section' title
+\vspace{4mm}
+\textbf{34. Work due to mutual reactions, such as springs, attractions or Repulsions.}
+
+\vspace{4mm} % Space after the section title
+
+
+% Add the section to the table of contents
+\addcontentsline{toc}{section}{34. Work due to mutual reactions, such as springs, attractions or
 Repulsions.}
+
+
 After examining everything related to work due to weights, we will now consider that which is due to mutual reactions.
 Suppose there are, among the forces applied to a system, mutual attractions or repulsions, such as would be, for example, forces produced by a spring that acts either to bring closer or to push apart with equal forces the points placed at its ends. Let's seek the work produced during the movement by two forces of this kind.
 Let \(R\) denote the force of the spring which we will suppose to be repulsive, and \(r\), the distance separating the two points on which the repulsions act. These forces will be directed in the direction of the line \(r\), and will tend to increase it. Represent by \(ds\) and \(ds'\) the infinitely small arcs described during the movement by these two points, and by \(\delta\) and \(\delta'\) , the angles formed by the directions of these arcs \(ds\) and \(ds'\) with the repulsive forces, or, which amounts to the same thing, with the extensions of the line r that joins the points where the forces are applied.
@@ -479,7 +537,14 @@ This theorem has many applications in machines because the forces that bodies de
 % Translated text with LaTeX equations
 In the following, we will refer to these reciprocal actions briefly as reactions or springs.
 
-\section{35}
+\vspace{4mm}
+\textbf{35. Reactions or springs, either elastic or imperfectly elastic.
+}
+\vspace{4mm} 
+
+% Add the section to the table of contents
+\addcontentsline{toc}{section}{35. Reactions or springs, either elastic or imperfectly elastic.}
+
 When the reactions \( R \) regain the same values when \( r \) returns to the same magnitude, that is, when they remain the same functions of distances, we will call them elastic. We will say that reactions are imperfectly elastic when the forces do not regain values as large when the distance between the points returns to the same. This is thus to apply to reactions in general what is said of springs.
 
 For elastic reactions, the integral \( \int R \, dr \) is null between two instances for which the distance \( r \) has returned to the same: because then this integral is divided into two perfectly equal and opposite sign portions, one for the extension of \( r \), the other for its decrease; so that the motive work and the resistant work, produced between the two instances for which \( r \) has resumed the same value, are equal and compensate each other. There is then in the first member of the equation of living force neither loss nor gain between these two instances.
@@ -495,7 +560,14 @@ But if \( R \) becomes smaller when \( r \) returns to the same value, then the 
 
 It follows from the foregoing, that if a spring is used as an intermediary to transmit to a body the work that a force produces on another body, it will be transmitted in its entirety, at least substantially, if the time during which the movement is considered is considerable enough that we can neglect in front of these quantities of work, on the one hand, that which is due once and for all to the greatest compression and to the greatest extension that the spring has taken during the movement; and on the other hand, the variation of the living force of the body which is intermediary between the force and the spring. This obviously results from the fact that the difference between the work received by the first body and the work transmitted to the second, is equal to that which is due to the compressions and extensions of the spring that separates them, increased by the variation of the living force of the first body.
 
-\section{36} The consideration of forces produced by a spring, or by any kind of mutual reactions, leads to the introduction of a quantity whose notion is very useful in the theory of work.
+
+\vspace{4mm}
+\textbf{36. The consideration of forces produced by a spring, or by any kind of mutual reactions, leads to the introduction of a quantity whose notion is very useful in the theory of work.}
+\vspace{4mm} 
+
+% Add the section to the table of contents
+\addcontentsline{toc}{section}{36. The consideration of forces produced by a spring, or by any kind of mutual reactions, leads to the introduction of a quantity whose notion is very useful in the theory of work.}
+
 
 If \( R \) denotes a force of mutual reaction, and \( r \) the distance that
 \newpage
