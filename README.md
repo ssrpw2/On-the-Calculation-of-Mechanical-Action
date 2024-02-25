@@ -1,4 +1,4 @@
-# Translation of "Du Calcul de L'effet des Machines" by Gaspard-Gustave de Coriolis (1829)
+# Translation of *Du Calcul de L'effet des Machines* by Gaspard-Gustave de Coriolis (1829)
 
 ## Overview
 This is a translation of *Du Calcul de L'effet des Machines* (1829) by Gaspard-Gustave de Coriolis. The title translates to either *On the Calculation of Mechanical Action* or *On the Calculation of the Effects of Machines.* This book was fundamental in defining kinetic energy and work, and is important to the history of mechanical engineering.
