@@ -1,0 +1,26 @@
+name: LaTeX Build
+
+on:
+  push:
+    branches:
+      - master  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2  
+
+    - name: Set up LaTeX
+      uses: xu-cheng/latex-action@v2  
+      with:
+        latexmk_use_xelatex: true  
+        root_file: stb-template.tex  
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v2  
+      with:
+        name: booksvg.pdf  
+        path: booksvg.pdf 
