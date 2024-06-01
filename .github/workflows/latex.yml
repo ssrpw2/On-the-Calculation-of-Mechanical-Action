@@ -1,7 +1,6 @@
 name: LaTeX Build
 
-on: push 
-
+on: push
 
 jobs:
   build:
@@ -17,8 +16,19 @@ jobs:
         latexmk_use_xelatex: true
         root_file: stb-template.tex
 
-    - name: Upload PDF
+    - name: Upload PDF to Actions
       uses: actions/upload-artifact@v3
       with:
         name: book-pdf
         path: stb-template.pdf
+
+    - name: Commit and push PDF to repository
+      if: success()
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add stb-template.pdf
+        git commit -m 'Add generated PDF'
+        git push origin HEAD:master
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
