@@ -3,21 +3,21 @@ name: LaTeX Build
 on:
   push:
     branches:
-      - master  # Triggers the workflow on pushes to the master branch
+      - master  
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Specifies the OS environment to use
+    runs-on: ubuntu-latest  
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2  # Checks out the repository
+      uses: actions/checkout@v2  
 
     - name: Set up LaTeX
       uses: xu-cheng/latex-action@v2  # Uses the LaTeX action to set up the LaTeX environment
       with:
         latexmk_use_xelatex: true  # Specifies the use of XeLaTeX
-        root_file: stb-template.tex  # Ensure this points to the correct .tex file
+        root_file: stb-template.tex  
 
     - name: Upload PDF
       uses: actions/upload-artifact@v2  # Uses the upload-artifact action to save the compiled PDF
