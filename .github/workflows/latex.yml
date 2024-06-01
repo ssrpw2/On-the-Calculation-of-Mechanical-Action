@@ -1,9 +1,7 @@
 name: LaTeX Build
 
-on: 
- push:
-  branches: 
-    -master
+on: push 
+
 
 jobs:
   build:
