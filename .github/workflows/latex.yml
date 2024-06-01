@@ -27,7 +27,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add stb-template.pdf
+        git add book.pdf
         git commit -m 'Add generated PDF'
         git push origin HEAD:master
       env:
