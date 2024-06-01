@@ -1,0 +1,20 @@
+name: LaTeX build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Compile LaTeX document
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-full
+        latexmk -pdf -interaction=nonstopmode main.tex
+    - name: Upload PDF
+      uses: actions/upload-artifact@v2
+      with:
+        name: PDF
+        path: main.pdf
