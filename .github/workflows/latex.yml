@@ -24,11 +24,12 @@ jobs:
 
     - name: Commit and push PDF to repository
       if: success()
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add book.pdf
+        git remote set-url origin https://x-access-token:${GH_PAT}@github.com/<OWNER>/<REPO>.git
+        git add stb-template.pdf
         git commit -m 'Add generated PDF'
-        git push origin HEAD:master
-      env:
-        GH_PAT: ${{ secrets.GH_PAT }}
+        git push origin HEAD:main
