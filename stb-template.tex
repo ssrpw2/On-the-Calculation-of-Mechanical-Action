@@ -69,40 +69,7 @@ TO SERVE AS AN INTRODUCTION TO THE SPECIAL STUDY OF MACHINES}
 
 % ---- Half Title Page ----
 % current geometry will be restored after title page
-\newgeometry{top=1.75in,bottom=.5in}
-\begin{titlepage}
-\begin{center}
 
-% Title
-\textbf{\fontfamily{qcs}\fontsize{48}{54}\selectfont On the Calculation of Mechanical Action}
-
-% Draw a line 4pt high
-\par\noindent\rule{\textwidth}{4pt}\\
-
-\textit{\booksubtitle}
-
-
-    
-\Large By Coriolis, Civil Engineer
-\par\noindent\rule{\textwidth}{3pt}\\
-PARIS, \\
-\small CARILIAN-GOEURY, LIBRAIRE\\ 
-PUBLISHER OF THE ROYAL CORPS OF BRIDGES AND ROADS AND MINES,\\ LOCATED AT QUAI DES AUGSTINS, N°41 
-\\
-\par\noindent\rule{\textwidth}{2pt}\\
-
-\textbf{1829} 
-
-\end{center}
-
-
-% \vspace{\fill}
-\vspace{\fill}
-
-
-\end{titlepage}
-\restoregeometry
-% ---- End of Half Title Page ----
 
 % No page numbers on the Frontispiece page
 \thispagestyle{empty}
@@ -112,37 +79,9 @@ This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 Intern
 \vspace{80mm}
 This book was typeset using \LaTeX{} software.\\
 \end{flushleft}
-% ---- Title Page ----
-% current geometry will be restored after title page
-%\newgeometry{top=1.75in,bottom=.5in}
-%\begin{titlepage}
-%\begin{flushleft}
-
-% Title
-%\textbf{\fontfamily{qcs}\fontsize{48}{54}\selectfont On the Calculation of Mechanical Action}
-
-% Draw a line 4pt high
-%\par\noindent\rule{\textwidth}{4pt}\\
-
-%{\textbf{\large \textit{\booksubtitle}}}
 
 
-%\vspace{\fill}
-
-% Author 
-%\textbf{\large \bookauthor}\\[3.5pt]
-
-%\vspace{\fill}
-% Self Publishing Logo. Free to use: CC0 license.
-% The source file is book.svg. If you change the svg, you must then convert
-% it to pdf. There are many online and offline tools available to do that.
-
-
-%\end{flushleft}
-%\end{titlepage}
-%\restoregeometry
-% ---- End of Title Page ----
-
+\newpage
 
 
 \newpage
@@ -153,13 +92,11 @@ This book was typeset using \LaTeX{} software.\\
 \setlength{\parindent}{20pt}
 \vfill
 
-This translation was assisted by GPT-4, an AI language model developed by OpenAI. GPT-4 provided valuable initial translations and suggestions, but the final text has been thoroughly proofread and edited by me to ensure accuracy and coherence. I am extremely grateful that I can access such advanced technology.
-
-I have personally transcribed the scanned images of the original book, written in French, into text. Prior attempts to use text recognition software resulted in significant errors during the conversion from image to text. 
+This translation was done by ChatGPT (OpenAI). The final text has been thoroughly proofread and edited by me to ensure accuracy and coherence. 
 
 I have taken care to make minimal changes to the text to preserve the authenticity of the document. Minor revisions were undertaken to correct unnatural phrasing and to clarify mathematical terms and equations. Any changes made are indicated in the LaTeX code of this document.
 
-The term "living force" was not translated into its modern equivalent, "kinetic energy." I am quite fond of this historical phrase and preferred to keep it intact. I think "living force" is a much too beautiful phrase to remove from this book. 
+The term "living force" was not translated into its modern equivalent, "kinetic energy." I am quite fond of this historical phrase and preferred to keep it intact. I think "living force" is much too beautiful of a phrase to remove from this book. 
 
 Considerable effort has been put into ensuring the accuracy of the equations in this book. Despite these efforts, there may still be errors in the translation. If any are discovered, or if there are suggestions for improvements, please feel free to email me. I welcome and appreciate any feedback.
 
@@ -174,789 +111,6 @@ Considerable effort has been put into ensuring the accuracy of the equations in 
 
 
 \vspace{\fill}
-\newpage
-% Translated text
-\textbf{CHAPTER ONE} \\
-\textbf{Articles:} \\
-1. Different perspectives under which Machines can be studied. \\
-3. Statements of physical principles that serve as the basis for Dynamics. \\
-4. On the motion of a point. \\
-6. What is meant by connections in Dynamics. \\
-7. General principle of Dynamics. \\
-8. On the principle of virtual velocities. \\
-13. Equation of living forces. \\
-14. On the quantity that appears in the equation of living forces. \\
-16. The term "dynamical work" or simply "work" proposed for this quantity. \\
-17. What is meant by "living force" in this Work. \\
-18. Principle on the transmission of work, and modifications of the statement in different cases. \\
-23. When friction is neglected, the term "principle of the transmission of work" is even better justified. \\
-24. Origin of the term "living force." \\
-25. Effect of machines in terms of work. \\
-26. How work serves as a basis for evaluating a motor. \\
-28. Analogy between work and the volume of materials. \\
-29. Time is an element that remains outside of work. \\
-31. On the unit of work; the term "dynamode" proposed for this unit. \\
-32. Distinction between work and the horizontal transport of burdens. \\
-\textbf{CHAPTER TWO} \\
-33. Calculation of the work due to the gravity of moving bodies. \\
-34. On the work due to mutual reactions, such as springs, attractions, or repulsions. \\
-35. On elastic or imperfectly elastic springs and reactions. \\
-36. On stiffness. \\
-\newpage
-37. Influence of stiffness in the distribution of work during the compression or extension of several reactions or springs placed one after the other. \\
-40. Influence of masses on the distribution of work in some particular cases. \\
-41. On the work produced by the pressure of a gas or steam on a movable envelope whose movement is not too rapid. \\
-43. Calculation of the work that can be collected by employing steam obtained with a given amount of heat, such as that provided by the combustion of a kilogram of coal. \\
-44. On the pressure produced on a solid canal by a fluid moving with constant velocity. \\
-45. Approximate formula for the pressure that a fluid vein produces against a fixed plane. \\
-46. Approximate formula for the pressure produced against a plane surface immersed in an indefinite current. \\
-47. On the work produced by a moving fluid on a canal and a movable plane. \\
-48. On the resistant work produced by friction. \\
-50. Equality between the quantities of work produced by equivalent force systems. \\
-51. On the work absorbed by friction in a brake. \\
-52. On the calculation of living forces; decomposition of the living force into two terms, one relative to the common movement, and the other to the relative movement. \\
-54. Simplification of the calculation of living forces in the permanent movement of fluids. \\
-55. Extension of the principle of the transmission of work when abstracting from a uniform movement that carries a machine. \\
-*56. Application to movement in a movable canal. \\
-58. The principle of the transmission of work still applies to the relative movement with respect to arcs of constant directions passing through the center of gravity of a moving system. \\
-\textbf{CHAPTER THREE} \\
-59. Considerations on the physical constitution of solid bodies. \\
-61. How the principle of the transmission of work can be extended to machines in their physical nature, and in which cases solid bodies can no longer be considered as invariable in shape. \\
-62. Remarks on the quantities of work due to mutual actions of particles. \\
-65. Considerations on linear shock. \\
-66. On the shock of two solid bodies, particularly that of elastic bodies. \\
-67. Considerations on elasticity. \\
-69. What can be called work at each point of a moving body. \\
-71. Considerations on the losses of work due to friction. \\
-\newpage
-72. Inductions that can be drawn from the observation of vibrations. General ideas on machines in their true nature. \\
-73. Approximate calculations for the losses of work in the shock of rotational systems when friction is neglected. \\
-75. Some considerations on cases where friction cannot be neglected in these shocks; what diminishes their influence. \\
-76. Considerations on the Dynamics of quantities of movement in the shock of bodies, and on the principle of d’Alembert. \\
-78. On how to understand the statements in Dynamics relative to quantities of movement when considering friction. \\
-79. On the Statics and Dynamics of shocks. \\
-82. On Carnot's Theorem. \\
-83. How the principle of the transmission of work extends to the movement of incompressible fluids. \\
-84. Application of the principle of the transmission of work to the flow of liquids. \\
-85. On the work received by a movable vessel into which a liquid vein enters. \\
-87. On the case where the velocity of the vein is not in the same direction as that of the vessel. \\
-88. The pressure borne by the vessel is deduced from the expression that gives the transmitted work. \\
-89. How the principle of the transmission of work extends to elastic fluids. \\
-90. Application to the flow of air. \\
-91. On the work necessary to expel, using a blowing machine, a certain volume of air through a given orifice. \\
-92. On the pressure received by a movable plane exposed to an air current. \\
-93. On the work received by a movable plane through the action of the wind, taking into account the reduction of pressure that occurs behind. \\
-\textbf{CHAPTER FOUR} \\
-94. On the different parts of machines designed to perform continuous effects. \\
-95. Theory of flywheels. \\
-96. On the work of waterfalls. \\
-98. On the unit of measure for the work produced by waterfalls as well as other continuous motors. \\
-100. On bucket wheels, i.e., those where water acts largely by its weight. \\
-102. On paddle wheels, i.e., those where water acts after having acquired almost all the velocity due to the fall. \\
-103. On the case where the paddles or blades are perfectly fitted. \\
-104. On the case where the paddles are not fitted and allow water to freely escape on the sides of the paddles. \\
-105. On wheels where the blades are curved vertically. \\
-106. On paddle wheels when these are wider than the current. \\
-107. On paddle wheels in an indefinite current. \\
-108. The speed suitable for the maximum work to be collected becomes smaller when this work is evaluated only after deducting losses from the transmission to a certain point of the machine. \\
-
-\newpage
-109. Consideration on the establishment of hydraulic wheels and on the means to make them take, in different cases, the speed corresponding to the maximum for the work to be collected. \\
-114. On the work produced by humans and animals, and the means of collecting it. \\
-118. On some numerical results on this work. \\
-119. On the means of collecting the work of steam. \\
-120. In a steam engine with or without expansion, there is a maximum of work to be collected, which is obtained by setting the temperature of combustion in a suitable ratio with that of the steam. \\
-121. Means to ensure that the piston takes the appropriate speed. \\
-122. On some experimental results on the quantities of work produced by steam engines. \\
-124. On windmills; establishment of formulas to find the elements that are suitable for the maximum work to be collected. \\
-125. Numerical determination of these elements. \\
-126. On the relative maximum related to the angular velocity only. \\
-127. Comparison between the work received by the blades according to the theory and according to Coulomb's experiments. \\
-129. How it is possible to make the blades take the speed corresponding to the maximum. \\
-130. General considerations on the use of motors. \\
-131. On how to state precisely the results indicating the degree of perfection of a machine designed to collect or transmit work. \\
-132. On how to establish the basis of the trades on motors. \\
-133. On the usefulness of a mechanism suitable for accurately measuring the work transmitted at a certain point of a machine; considerations on this subject. \\
-134. On the movement transfers and on the experiments to be conducted to evaluate them. \\
-135. On the different useful effects; how they can be performed by consuming more or less work; distinction between losses related to these effects and those that are not. \\
-136. On experiments on the consumption of work required by various useful effects. \\
-\textbf{TABLES} \\
-1: On the quantities of work required for various useful effects performed with the aid of machines: according to the most approximate results known today. \\
-2: On the quantities of work that can be collected from different motors. \\
-\textbf{NOTE} \\
-On a mechanism suitable for precisely measuring the work transmitted by a machine.
-
-
-\newpage
-\pagenumbering{roman}
-\textbf{REPORT}
-\begingroup
-\centering 
-\\
-Done at the Academy of Sciences, on a book entitled On the Calculation of 
-Mechanical Action, or Considerations on the Use of Engines and their Evaluation, to Serve as an Introduction to Special Study of Machines ; by M. Coriolis, Civil Engineer. 
-\par\noindent\rule{\textwidth}{1pt}
- \endgroup
-\setlength{\parindent}{20pt}
-% Translated text
-The theoretical considerations governing the establishment and calculation of the effect of machines are very worthy of the interest of scholars, both for their own sake and for their influence on the progress of the arts. One of the main problems posed in the construction of machines is to replace, for the execution of useful works, our own forces with the much more powerful forces of natural agents. It is very important to employ in the most advantageous way possible the considerable capital that is today dedicated to enterprises of this kind.
-
-The science of machines, considered in its full extent, is very vast and encompasses almost entirely the whole of the arts. Limiting oneself to the part of this science that belongs to Mathematics, it is recognized that it borrows essential notions from Geometry, Statics, and Dynamics. Among these latter, the principal consists in the consideration of the action of machines and the motors applied to them, in the distinction of the elements of this action, and in the search for the proportions that should be established between these elements, to obtain from natural agents the greatest amount of work possible. These considerations have long attracted the attention of geometers. It was soon recognized that the effect of a machine, which was always easy to assimilate to the elevation of a weight, was proportional to the elevated weight and to the speed of the vertical ascent; but Parent seems to have first noticed, in the Memoirs of the Academy of Sciences for the year 1704, that given the motor intended to perform work, the effect that could be obtained from it was susceptible to vary within certain limits, and that it was necessary to so proportion the efforts and speeds, that this effect reached the greatest value that the nature of the motor could allow. These ideas have been adopted by scholars and engineers who have since been concerned with this matter. The theoretical and experimental researches of Daniel Bernoulli, Euler, Borda, De Parcieux, Coulomb, Carnot, Belidor, Smeaton, have generally aimed to appreciate the action of various motors, and to learn to regulate it in such a way as to satisfy the conditions of maximum that arise in all questions of this kind, as well as in most of the applications of the sciences to the arts and natural philosophy.
-
-M. Coriolis, in the work which the Academy has charged us to report on, notes that the theoretical notions related to the use of motors are not presented in the teaching of rational Mechanics, nor fully developed in the special treatises on machines. These notions consist mainly in the application of the principle of the conservation of living force, an application indicated by the illustrious Lagrange, in the last pages of the Theory of Analytical Functions. Petit, a skilled professor at the École Polytechnique, whose premature 
-%replaced phrase "deeply grieved by friends of science" in this line
- death deeply affected the scientific community, gave a succinct memoir on this subject, printed in 
-\newpage
-1818, in the Analysis of Chemistry.
-% Translated text
-This matter is also treated, with more extensive coverage, in the notes of the first volume of a new edition of Belidor's 'Hydraulic Architecture,' which appeared in 1819. M. Coriolis had worked on this subject on his own and had largely drafted the work he has just presented to the Academy at about the same time.
-
-This work is divided into four chapters.
-
-In Chapter 1, the author briefly recalls the fundamental principles of Statics and Dynamics, by means of which questions relating to the equilibrium and movement of a material point, and a system of material points subject to arbitrary constraints, are solved. The general solution to these questions is reduced, using the principle given by d'Alembert, to expressing the respective equality of the virtual moments of the forces applied to the system, and of the forces to which the movements taken by the various material points would be due. This immediately leads to the principle of the conservation of living forces: an equation that expresses that the living force of the system remains constantly proportional to the integral of the virtual moments. To this expression of virtual moment, the author substitutes that of elementary work, and names work the value of the integral just mentioned; a value that is indeed, as he explains in detail, the true numerical expression of the actions exerted by the engines on the machines, and by the machines on the resistances they must overcome to fulfill the objective to which they are intended. The principle of the conservation of living forces becomes for him the principle of the transmission of work; and as he names living force half the product of the mass of a body by the square of its velocity, this principle is generally stated by saying that the resistant work is always equal to the motive work, minus the amount by which the sum of the living forces has increased in the system. The quantity thus designated by the name of work, always being the product of a weight by a length, is evaluated by means of known units, and is usually expressed, in our system of measurements, by a number of kilograms raised to a meter in height; but it may seem desirable, to shorten the language and give it more precision, to admit for quantities of this kind a special unit, whose value is in line with the units of the metric system, and to which a name is given. M. Coriolis adopts, as several people had already done, as a unit of quantities of work, a thousand kilograms raised to a meter, and gives it the name of dynamode. Here is a remark that should not be omitted. Some scientists have proposed, to express the action of engines and machines, the use of another kind of quantity, which was the product of a weight by a length and a time interval, and which was expressed in units each equal to a hundred kilograms raised to a meter in one second, to which the name dyname was given. It is certain that the consideration of this latter quantity, which is similar to that commonly designated by horsepower, arises, as does that of the former, in theories relating to engines and machines. But one could always completely define the action of either, by stating the quantities of work they can perform during the unit of time, or in a determined interval, such as a day or twenty-four hours. The author explains with great accuracy and clarity, in this chapter, the manner in which the principle of the transmission of work must be applied to the various systems, according to the nature of the connections that exist between the material points: he concludes it by rightly noting that we cannot 
-\newpage
-(3)\\
-apply to the denomination of work, as he has defined it, to the product of a transported weight, multiplied by the distance of transport, or in general to the product of a space traveled, multiplied by a force directed perpendicularly to this space; it is necessary to consider only the effort that is exerted in the direction of the traveled space.
-
-% Translated text
-The main object of Chapter II is the evaluation of the work that can be obtained from various natural agents, in cases where the forces they produce are immediately known. The author first considers the action of heavy bodies, whose result is given by the product of the sum of the weights, multiplied by the vertical displacement of their common center of gravity; that of springs and, in general, of elastic links interposed between the parts of a system, which is estimated by the product of the force acting from one point to another, multiplied by the variation of the distance between the two points. The examination of this latter action leads him to distinguish this quality of springs, which is designated by the name of stiffness, and whose mathematical expression should be given, according to M. Coriolis, by the ratio of the variation of the force soliciting the spring to the corresponding variation of the space described by the point of application of this force. It is noted that when two opposing forces are applied to a system in which several springs are interposed, it is always the less stiff springs whose compression or extension consumes the largest quantities of work. The author successively gives the expressions of the quantities of work corresponding to a certain variation in the volume of an elastic fluid, or which are due to the production of aqueous vapor at various temperatures, whether or not the facility of expansion of this fluid is exploited; those of the work due to the action of a fluid in motion, which encounters a plane or travels through a mobile channel, and finally the resistant work produced by the forces arising from frictions. Here, there is a very simple expression, not yet given, of the work consumed by the friction of gears; an expression which reduces to the integral of the product of the resistance of friction, multiplied by the variation of the distance of the contact points (*).\footnote{(*) This expression would be obtained immediately by noting that the resistance of friction can be likened to the force of a spring interposed between the two points in contact, and which opposes the separation of these points.} If the resistance of friction can be assumed constant, the work in question is expressed by the product of the resistance of friction, multiplied by the difference of the arcs described respectively by the contact points on the contour of the teeth belonging to each wheel. This chapter is concluded by various general propositions relating to the evaluation of the quantities of work produced by given forces, and of the living force of a system. The author shows that two equivalent systems of force applied to a machine, that is, two systems of force such that one can pass from one to the other by applying forces that mutually balance each other, always produce equal quantities of work among themselves. This remark gives the explanation of the apparatus formed by a brake, which was proposed by M. de Prony, to determine, by experiment, the quantity of work transmitted to a rotating shaft. As for the evaluation of the living forces of a system; it is recognized that in general this living force can always be considered as being composed of two parts, one of which would be calculated by supposing all the bodies united in the center of gravity, and considering the absolute velocity of this center; the other, 
-
-\newpage
-(4)\\
-by supposing the center of gravity immobile, and considering the velocities of each body with respect to this point.
-% Translated text
-This remarkable proposition had not been explicitly stated by Lagrange, although it can be easily deduced from the analytical expressions used by this great geometer. It is also recognized that when a machine is part of a system of moving bodies, whose speed is constant and uniform, the principle of living forces persists, considering only the relative displacements of the points of the machine; and finally, as Lagrange noted, this principle persists, in all cases, for a system that moves freely in space, considering only the relative movement of the system's points with respect to the center of gravity.
-
-A large part of Chapter III is devoted to examining the consequences of the principle of the transmission of work, when the abstract notion of a system of material points subject to each other by constraints defined by equations, is replaced by the natural notion of a system whose parts are formed by bodies. The author considers solid bodies as an assembly of material points, between which considerable forces are established when one undertakes to change their distances, and defines elasticity by stating that in an elastic body the mutual actions of two molecules constantly resume the same values when these molecules find themselves at the same distance. All bodies called solids are elastic when they undergo only a very small change in shape. In a system whose connections are formed by solid bodies, the principle of the conservation of living forces cannot generally be applied accurately, if the actions of molecular forces and the displacements of the interior points are not taken into account. It is also recognized that the quantities of resistant work, due to internal forces, depend solely on the changes in shape of the parts of the system, and not at all on the movements by which these parts are transported in space. The consideration of molecular forces and the quantities of work they absorb through the effect of relative displacements of the parts of the bodies is especially important in the phenomena that accompany shocks, phenomena which M. Coriolis has studied in depth, and on which he presents more accurate notions than had been done until now. He rightly notes that an error is committed in admitting that in the collision of perfectly elastic bodies the living force undergoes no alteration; this can only occur as long as, at the end of the collision, the material points of which these bodies are composed have returned to their original distances, and are not animated by any relative velocity with respect to the center of gravity of each body. However, the study of particular cases that can be completely resolved shows that these conditions are not generally met, so that at the end of the collision there may remain in each body changes in shape, or relative velocities, which will give rise to vibrations, and whose production has consumed a certain amount of work, and decreased by a corresponding amount the apparent living force of the system, that is to say, that which would be calculated by considering only the movement of the centers of gravity of the bodies. From this, it does not seem necessary to generally regard the losses of living force observed in the collision of bodies as the effect of a lack of elasticity, or resistance to the relative movements of the particles: these losses can always be explained, in the hypothesis of perfect elasticity, by the consideration of the tremors that are produced in the bodies of the system or in the surrounding bodies. This is how one would account for the 
-\newpage
-(5)\\
-progressive weakening and final extinction of the vibratory movement of a perfectly elastic string, by considering only the tremors transmitted to the surrounding air, or to the solid bodies to which the ends of this string are attached.
-% Translated text
-These considerations lead to an examination of the influence of the stiffness of the springs that are interposed in a system on the results of a shock. The compression of a spring devoid of stiffness consumes a lot of living force, which is then returned by the effect of the restitution of the spring; consequently, the interposition of a similar spring will prevent the greater part of the living force possessed by a moving body from passing into an obstacle encountered by the body to produce tremors, resulting in the original velocity of the body being returned in the opposite direction, almost without alteration. When a force has acted on the surface of a body, by the effect of a shock or otherwise, it has produced a certain amount of work there, which is then transmitted partly to the surrounding particles, and tends to disseminate throughout the extent of this body. This observation leads to considering the work that exists in a given point of a body, and the manner in which this work passes from one part to another; but, as the author observes, the search for the laws according to which this transmission operates cannot be based, like the movement of heat, on a particular principle, since the transmission in question is the necessary result of the internal forces, which are developed by the relative displacements of the molecules. Returning to applications to machines, M. Coriolis seeks to evaluate, by means of plausible hypotheses, the limits of the loss of work produced by shocks, in the main cases that can arise. The author here places important general remarks on the Statics and Dynamics of quantities of motion and on the restrictions that are necessary in the application of the results deduced from the consideration of quantities of motion to the effects of shocks; effects that can be very different for equal quantities of motion, depending on the nature and shape of the bodies, and on the relative proportion of masses and velocities. In the last part of this chapter, the principle of the conservation of living forces, or the transmission of work, is applied to the search for the laws of the flow of incompressible and elastic fluids, the work necessary to produce the flow of a given volume of air in a blowing machine, that which is produced by a current received in a vessel or a mobile channel, and finally the work transmitted by the wind to a mobile plane, such as the wing of a windmill. In dealing with this last question, the author evaluates the pressure that is established against the posterior face based on the consideration of the speed that the air must take to fill at each instant the vacuum that tends to form behind the mobile plane. This consideration may be suitable to give a limit from which the natural effects deviate little in some cases; but it does not seem that it should be admitted in general, since it takes no account of the length of the body in the direction of the relative movement that produces the shock, and there are several experiments, made by Dubuat, which show that the pressure in question varies greatly, depending on whether this length is more or less great.
-
-Chapter IV aims to apply in a more special way the theoretical notions presented in the preceding chapters. After distinguishing, in general, in machines three main parts, one that immediately receives the action of the motor, another that transmits this action, a third that acts immediately on the resistance, and exposing the considerations according to which 
-\newpage
-(6)\\
-flywheels can be established to prevent deviations in speed beyond given limits, the author deals with the work of waterfalls and the way to transmit it by means of bucket or paddle wheels.
-% Translated text
-The solutions to these questions are easily deduced from the expressions that have been previously established for the quantities of work transmitted by a water current to a vessel or a mobile channel. The author adds useful remarks for the construction of various types of wheels, and the economy of the motor's action; he observes rightly that, in applications, it is not ordinarily the work transmitted to the wheel itself that needs to be maximized, but rather the work transmitted to the part of the apparatus that acts directly on the resistance, which is always less than the former, due to frictions or other obstacles inherent to the machine. With regard to this consideration, it is found that the speed corresponding to the greatest effect of a machine is always smaller than the speed that would maximize the work transmitted to the driving wheel, which is consistent with the results obtained by experience. When the speed of the driving wheel corresponding to the maximum work obtained is known, the apparatus must be arranged so that this speed actually occurs. In general, the quantities of work developed and consumed simultaneously by the motor and the resistance depend respectively on the speed of the parts of the machine. Now, there will always exist a value of the speed such that these quantities of work are equal to each other. This can be called the stability speed, because the variable speed of the apparatus can only oscillate around this value: indeed, as soon as it has deviated more or less from it, the motive work always becomes smaller or larger than the resistant work; and, according to the principle of the conservation of living forces, the actual speed tends to decrease or increase. Everything, therefore, comes down to ensuring that the stability speed coincides with the speed corresponding to the maximum effect; a condition that can be expressed by saying that the effort of the resistance must be in static equilibrium with the effort of the motor corresponding to this maximum. This condition can be met, in various cases, by suitably regulating the quantity of resistant work and the proportion of the gears that serve to transmit the action of the motor. The addition of a flywheel will always provide a means of narrowing, within limits as close as desired, the oscillations of the effective speed around the stability speed. The use of human and animal forces gives rise to similar considerations, and it should also be noted that the greatest quantity of work they are capable of, with equal fatigue, varies with the nature of the movements they are obliged to take, so it is important to distinguish their various types of action, and to arrange accordingly the apparatus to which they are applied. As for the use of steam, M. Coriolis shows in detail that its use must also be regulated according to considerations that are reduced to determining a maximum, a determination that rests solely on experimental research today, which it would be very important to undertake. Indeed, everything in steam engines comes down to the evaluation of the quantity of fuel consumed, and the corresponding quantity of work that is transmitted to the axle of the flywheel. The combustion of coal provides a source of heat, part of which passes into the boiler to vaporize the water, and alone contributes to the production of the useful effect. This effect depends on the speed of the piston and the pressure under which the steam is produced; but this pressure itself depends 
-\newpage
-(7)\\
-on the speed of the piston, since the quantity of steam that leaves the boiler can only be equal to that which would be formed by the heat that this boiler receives at each instant, and which is all the greater as the temperature in this boiler is less elevated.
-% Translated text
-Thus, the effect of the machine is definitively regulated by the pressure and the corresponding temperature that occur in the boiler. However, it is easily recognized that if this temperature is very low, a greater amount of the heat developed in the hearth can be received, and nevertheless produce a very small amount of work, due to the low tension of the steam; whereas if the same temperature is very high, almost no heat will enter the boiler, and consequently only a very small quantity of steam can be formed, which would also produce, despite its great elastic force, only a very small amount of work. Between these two extreme terms, there necessarily exists a suitable temperature to produce the maximum amount of work from a given quantity of fuel. These considerations are well suited to direct the attention of mechanics to the arrangement of the hearth, and to the relationship of the steam temperature with that of combustion, circumstances that can have much more influence on the results than the construction of the machines themselves, and which should not be neglected in experiments aimed at comparing various devices, if one does not want to expose oneself to completely erroneous conclusions.
-
-Windmills are the last engines considered by M. Coriolis in this chapter. After noting that due to the size of the blades, the slight curvature of their surface, and a few other circumstances, little error should be committed in applying to the transverse elements of these blades the expression, given in the previous chapter, of the work transmitted to a mobile plane that receives the shock of an air current, the author forms an integral that contains the inclination of the element to the direction of the wind, as well as the common angular velocity, and which is to be maximized by suitably determining this velocity, as well as the law of inclinations of the elements, that is, the shape of the surface of the blade. The solution achieved in this manner can be considered as being closer to natural effects than the notions that have been proposed so far on the same subject, and the results agree well with the observations on the windmills of Belgium that were given by Coulomb, especially for the inclinations suitable for the extreme elements of the blades. The author has recorded in a table the values of the quantities of work corresponding to various wind speeds and blade speeds, values that highlight the speeds that should be adopted in each case to obtain the maximum effect. After these notions related to the use of engines, there are various general considerations on how to state the results related to the work of machines, and the conditions of the markets to which their establishment can give rise; on the usefulness of mechanisms designed to measure the work transmitted by the parts of machines, and on a new device of this kind proposed by the author; finally, on the experiments that could be carried out to assess the work lost due to resistances caused by the various mechanisms used to transmit movements. The last pages of the chapter deal with the part of the machines that acts directly on the resistance. The general notions that can be presented on this subject consist mainly in noting that it is often impossible to produce the useful effect that is the object of the establishment of the machine, 
-\newpage
-(8)\\
-without at the same time producing other effects that consume in pure loss a part of the motive work: thus, one cannot raise water without at the same time imparting velocity to the water that flows in at the point where it is drawn and to that which flows out of the point where it is raised; one cannot beat iron without imparting vibrations to the anvil and the ground that supports it.
-% Translated text
-These effects, which are not inherent to the result to be obtained, can always be diminished, and one should seek to do so, stopping at the point where this reduction could not be carried out without causing too much increase in construction expenses. M. Coriolis has included at the end of this chapter very interesting tables containing results related to the quantities of work necessary for carrying out the main fabrications that are the object of the arts, as well as the quantities of work actually obtained from various engines. These results provide valuable elements to artists who are involved in the construction of machines, in establishments where the economy of force is an important consideration. We note, concerning the composition of such tables, that for them to present only accurate ideas to the reader, it seems necessary either to include all known observations or to report only average terms. Mixing some isolated experiments with the average terms given by authors would not be suitable for making the reader judge the result to be adopted. The verification and progressive improvement of these tables, through accurate observations stated with precision, is one of the most useful objectives towards which the attention of engineers can be directed.
-
-We will conclude here an analysis whose extent was necessary to give an idea of the new work that is the subject of this report. This work presents a very fine application of the general principles of Mechanics to one of the most useful objects for the progress of public wealth. The author, who combines a profound knowledge of these principles with the special knowledge that belongs to engineers, presents his ideas with the conciseness that the use of analytical language allows, and consequently this work is mainly intended for people who have undergone studies similar to those of the École Polytechnique. The theoretical notions presented in the teaching of this school are here applied directly to one of the main objects of concern to engineers, and the work in question is very well suited to show that these notions are not destined to remain sterile, and that, far from offering just a useful exercise for the development of the faculties of the mind, they are eminently suitable with regard to its extent, M. Coriolis treats each subject, even those that have been dealt with before him, in an accurate and ingenious manner that is his own. We think that his work is very worthy of the approval of the Academy, and that its publication will be very useful.
-\vspace{10mm}
-
-\begin{flushright}
-
- Made in Paris, on June 8, 1829. 
-\\
-Signed Baron DE PRONY, GIRARD, NAVIER (reporter).
-\end{flushright}
-
-
-
-% Table of contents settings
-\tableofcontents
-
-
-
-\vfill
-Note. The articles marked with an asterisk * are those that are less related to general ideas about the effect of machines, and that we can pass on as desired.
-
-\clearpage % Reset after table of contents
-
-
-
-\mainmatter
-\pagestyle{fancy} % Reapply header/footer settings
-\newpage  % Start a new page
-
-% Your custom text here
-\begin{center}
-\large\textbf{ON THE}\\
-\vspace{3mm}
-\huge\textbf{CALCULATION}\\ 
-\vspace{3mm}
-
-\large\textbf{OF} \\ 
-\vspace{3mm}
-
-\huge\textbf{MECHANICAL ACTION}
-\end{center}
-\vspace{3mm}
-
-\par\noindent\rule{\textwidth}{2pt}\\
-
-\vspace{5mm}
-
-% Manually formatted 'chapter' title
-\begin{center}
-\huge\bfseries CHAPTER I
-\end{center}
-\vspace{10mm} % Space after the chapter title
-\markboth{CHAPTER I}{}
-
-% Add the chapter to the table of contents
-\addcontentsline{toc}{chapter}{CHAPTER I}
-
-\textbf{Review of the Preliminaries of Dynamics - Equation of Living Forces.}
-
-\textbf{–Principle deduced for Machines considered from a rational point of view - Definition of Work as a quantity - How Work is used to measure the value of a faculty of movement or an engine - On the Unit of work. Distinction between Work and the horizontal Transport of burdens.}
-\vspace{26pt}
-\\
-\vspace{4mm}
-
-% Manually formatted 'section' title
-\vspace{4mm}
-\textbf{1.}
-\vspace{4mm} 
-
-% Add the section to the table of contents
-\addcontentsline{toc}{section}{1}
-
-\textbf{(1)} Machines can be studied from three different points of view: 1: by considering the forces that are produced in the state of equilibrium, as is done with the lever, the screw, the pulleys, and all the machines intended rather to exert great efforts than to produce movement; this is the domain of Statics; 2: by considering only displacement to understand the dependencies of movement, as is done in the study of different modes of movement transmission and all the mechanics that aim to supplement the skill of man; this 
-%used 1: etc instead of degree symbol (in original text) after numbers 
-is the domain of Geometry; 3: finally, by considering both forces and movement, as is done in machines intended for fabrications of all kinds where the economy of the engine must be taken into consideration;
-\newpage
-(pg. 2) \\
-this is the domain of Dynamics.
-
-
-It is from this last perspective only that we will study machines. To be well understood, it is necessary to recall in a few words some preliminary notions of Mechanics, and to clearly define how different terms used in this science will be employed.
-
-The first idea we have of force comes from the sensation we experience when we make an effort to move a body or to modify its speed, either in magnitude or direction. Inanimate bodies producing, under certain circumstances, effects similar to the force of our limbs, we have extended the concept of force to cases where these agents are substituted for our own effort to produce similar effects. From there, we have come to compare forces, and consequently to introduce them as quantities in calculation. In this respect, force is somewhat like heat, whose first idea was also that of a sensation; it has also been introduced into calculation using its effects to expand bodies.
-
-\textbf{(2)} Several geometers have considered two kinds of forces. The first, which is the one I just mentioned, cannot instantaneously produce a sensible change, either in the intensity or in the direction of the speed of the body it solicits; this force can be assimilated to the action of a weight or a spring - this will be the only one we will consider in this work. The second is the one that is supposed to be able to instantaneously modify by a finite amount the speed of a body, either in magnitude or direction. Although it is recognized that one cannot strictly admit this instantaneous modification, however, as with a very great force one produces in a very short time sensible changes, one has permitted oneself to suppose the existence of forces of the kind we have just indicated, conceiving them so to speak as infinitely large, but comparable to each other. We will return later, when talking about 'shock', to the use that can be made of this dynamic; we will see that it is based rather on a certain metaphysics than on true physics.
-
-As the consideration of these instantaneous forces is not necessary for what we have to expose on the theory of machines, we will not use them. In what we are going to say, the
-\newpage
-(pg. 3)
-\\
-word 'force' will therefore apply only to what is analogous to weights, that is to say, to what is called, in several cases, pressure, tension, or traction.
-% Translated text
-In this sense, a force can never significantly change the direction and magnitude of a velocity without passing through all intermediate states, and without this change requiring a noticeable amount of time.
-
-\textbf{(3)} Let us briefly recall what experience has taught about the relationship between force and motion.
-
-All observations on motion lead to the adoption of the following laws:
-
-1. A body cannot change its velocity in magnitude or direction unless it is subjected to a force; this is what is called the law of inertia.
-
-2. To produce on the same body more or less significant increases or decreases in velocity in equal times, by acting with constant forces directed in the direction of the velocity or in the directly opposite sense, it is necessary that these forces be proportional to these increases or decreases in velocity: this is the law of proportionality between forces and variations in velocity.
-
-3. If a body already having a velocity is then solicited by a force, consider its movement relative to three axes passing through the position it would have occupied if this force had not existed; the movement relative to these axes, whose origin is mobile, will be the same as if the body had not had any velocity when the force began to act on it, and that the movement was thus related to immobile axes. This is the law of independence between acquired motion and the effect of forces.
-
-4. To produce the same increase in velocity on different bodies in a given time, forces of different intensities are required. These different intensities, which produce in us the idea of masses (*),\footnote{(*) It is often said that mass is the quantity of matter in a body; but upon reflection, it is clear that when it comes to bodies of different natures, and when volume can no longer be taken as a measure of mass, the only measure of this quantity for us is the force capable of producing the same accelerated motion.} are proportional to the weights of the bodies taken in the same place on
-
-
-
-\newpage
-(pg. 4) \\
-
-earth: this is the law of proportionality between masses and weights for the same place. As, in the calculation of machines, one does not have to consider these weights in different places, one can, by virtue of this law, take the weights as quantities proportional to the masses.
-
- \textbf{(4)} It is on these observational laws that the entire dynamics of a material point is based. It is easy to deduce for straight-line motion that if a weight is taken as the unit of force, for example, a kilogram, a body whose weight is \(p\), being subjected to a force \(F\), which acts with a constant intensity for a unit of time 
-\(t\) in the direction of the motion, will acquire during this time a velocity which will be \(\frac{F}{p} \cdot g\), denoting by \(g\) the increase in velocity of bodies falling vertically during \(t\),
-%changed 1" from original text to variable t
-that is, that which would be produced by the weight \(p\) acting alone on the body in question. If the force \(F\) varies with time, the velocity will be given by the equation \(\frac{dv}{dt} = \frac{F}{p} \cdot g\).
-
-For curved-line motion, these same laws also lead to the conclusion that if a force F has as its component in the direction of three fixed axes the variable forces \(X, Y, Z\), whose unit is the kilogram, and if it acts alone on a free material point, whose weight, expressed in kilograms, is represented by \(p\), it will produce a motion such that at each instant the equations
-\[
-\frac{d^2x}{dt^2} = \frac{X}{p} \cdot g, \quad \frac{d^2y}{dt^2} = \frac{Y}{p} \cdot g, \quad \frac{d^2z}{dt^2} = \frac{Z}{p} \cdot g,
-\]
-where \(X,Y,Z \) are the coordinates of the material point. Knowing the position of this point and its velocities in the direction of the axes at a certain instant, it suffices to be able to express at each instant the components \( X, Y, Z \) of the force acting on the free point to deduce, by integrating these three equations, the complete knowledge of the motion.
-
-With the aid of various considerations developed in the treatises on Mechanics, it is concluded from these equations that if one decomposes the force \( F \) into two components, one acting according to the tangent to the curve described, and the other according to the normal to this curve, the tangential component will be expressed as \( \frac{p}{g} \frac{d^2s}{dt^2} \), denoting by \( s \) the arc described by the moving point; the normal component will be expressed as \( \frac{p}{g} \frac{v^2}{r} \), where \( v \) is the velocity, and \( r \) is the radius of curvature.
-
-
-
-
-\newpage
-
-(pg. 5)
-\\
-\( s \) being the arc described by the moving point; its normal component will be expressed as \( \frac{p}{g} \cdot \frac{v^2}{r} \), denoting by \( v \) the velocity, and by \( r \) the radius of\\ curvature.(*) \footnote{(*) This decomposition is easily established in the following manner. The principles of differential calculus give
-\[
-\frac{d^2x}{dt^2} = \frac{d \left( \frac{dx}{dt} \right)}{dt} = \frac{d \left( \frac{dx}{ds} \right) \left( \frac{ds}{dt} \right)}{dt} = \frac{d^2x}{ds^2} \left( \frac{ds}{dt} \right)^2 + \frac{d^2s}{dt^2} \frac{dx}{ds}
-\]
-If we denote by \( \alpha \) the angle that the radius of curvature \( r \) of the curve described by the moving point makes with the x-axis, and by \( a \) the angle that the tangent to this curve makes with the same axis, it is known that we have \( \cos \alpha = \frac{1}{r} \frac{d^2x}{ds^2} \), and \( \cos a = \frac{dx}{ds} \): thus the previous equation becomes \( \frac{d^2x}{dt^2} = \frac{1}{r} \left( \frac{ds}{dt} \right)^2 \cos \alpha + \frac{d^2s}{dt^2} \cos a \). As we have similar equations for \( \frac{d^2y}{dt^2} \) and \( \frac{d^2z}{dt^2} \), it is concluded that the force that produces the movement of the moving point decomposes into two forces \( \frac{p}{g} \frac{1}{r} \left( \frac{ds}{dt} \right)^2 \), and \( \frac{p}{g} \frac{d^2s}{dt^2} \), one tangent and the other normal to the curve described.}
-
-The ratio \( \frac{p}{g} \) is what is called the mass; it is usually denoted, for brevity, by \( m \); however, it seemed to us that, to avoid the errors that could be caused in applications by the use of the mass \( m \), it was more appropriate, in this work, to let the weights appear, so that the kilogram is everywhere the unit of force.
-
-\textbf{(5)} To move on to the dynamics of a set of material points linked together in any manner, that is to say, to the study of the movement of a machine, it must be admitted that the same relationships that must exist between forces so that they do not produce movement when acting on points at rest linked together by certain geometrical conditions, are also those that must exist so that these forces do not modify in any way the movements that the same points linked in the same way would already have if they were solicited by other forces. For example, if two forces balance each other in a resting lever, when they are in the ratio of their distances to the fixed point, they will not modify 
-
-
-
-\newpage
-(pg. 6)\\
-in any way the movement that this lever could have, provided that they are always in this same ratio: it is in this sense that we will say that forces capable of producing equilibrium are forces that always destroy each other.
-% Translated text
-Therefore, by forces that destroy each other, we understand those that, by themselves, do not tend in any way to produce movement when it does not exist, nor to change that which is already produced by other forces.
-
-Adopting this principle for a point retained on a surface, and for the lever or any other simple machine, one could well conclude that it generally subsists in any kind of system of connection; but we will not dwell on this subject: it is enough for us to clearly show the truths from which one must start to establish all of Dynamics. Attempting to base these truths on others a bit simpler would be an exercise of the mind that should not find a place in this work.
-
-\textbf{(6)} With the help of the preceding principles, one can treat the problem of the search for the motion of material points linked together in any manner, when one knows, 1) the forces that produce this motion; 2) the connections that exist between the points; 3) the positions and velocities of the material points at the moment when the forces begin to be known.
-
-But before dealing with this, it is appropriate to fix the ideas on what we will understand by connections between material points, and to say how we will first conceive of machines from a rational point of view, before coming to consider them in their true physical composition.
-
-Certain bodies, not being susceptible to changing shape substantially under very strong pressures, are regarded at first, in rational Mechanics, as entirely invariable in their dimensions. It follows that the masses which are part of them or which are attached to them are obliged to maintain this invariability in their movement. It is by combining the use of bodies that thus render certain dimensions invariable, that one produces what we call connections. These should be considered as geometrical relations between the positions of the moving points, which must always exist during the movement. These relations or connections can be expressed by equations into which enter the coordinates of the moving points: such are, for example, the rigid rods 
-\newpage
-(pg. 7) \\
-that join moving masses, the chains, the fixed axes around which certain masses can only rotate, the gears that establish relations between two movements of rotation.
-
-We will therefore begin by first considering machines as a set of material points, whose movements must satisfy certain geometrical conditions that we will call connections.
-
-It is not useless to note that, if springs or any other mode of connection were interposed between two mobile bodies, which, without producing a perfect invariability of certain dimensions, and without introducing geometrical relations susceptible to being put into equation, would have no other effect than to develop forces of attraction or repulsion between the mobile points; although it results from these interposed springs or these attractions or repulsions a kind of connection between the mobile points, in the sense attached to this word according to ordinary language, however, one should not at all confuse these connections with those that we consider here. The latter are purely geometrical relations; the others, which result from springs and any other mode of attraction or repulsion, are considered in Mechanics only as means of producing forces that must be known a priori as a function of certain variables to be introduced as data in questions relating to motion. For the connections that we consider, we will see that on the contrary, one does not need to know the forces that they add to arrive at the determination of the motion; it is enough to fully understand all that the geometrical conditions introduced by these connections contain. Assuming that these conditions linking the coordinates of mobile points are put into equation, these equations always replace, in the search for motion, the knowledge of the forces that the connections they express add to those that are given as producing the motion.
-
-Sometimes, when it is impossible to know all the forces to which the motion we seek is due, and to solve the problem at least with some approximation, it is assumed that certain movements known in advance will necessarily be produced. We then pose certain equations where time enters with the coordinates of the mobile points, and we suppose that the movements necessitated by these equations must take place in a mandatory manner.
-\newpage
-(pg. 8)\\
-
-Although these mandatory movements have been called by some authors as conditions or links, functions of time, care must be taken not to assimilate them to what we have just defined as links: the latter can always be expressed by equations where time does not enter, and they do not entail any movement in themselves. Conditions that require movements by themselves assume that one dispenses with regard to all the forces and all the initial speeds that contribute to the movement. For example, if one wants to deal with the oscillations of a pendulum taking into account the movement of the earth; as one can assume that this movement is not significantly altered by that of the pendulum, one can suppose that the suspension point has an obligatory movement; then, to arrive at the complete knowledge of the oscillations of this pendulum, one will be dispensed with knowing the forces that are applied to its suspension point. Cases similar to this are very rare in applications to machines; but as they are dealt with in rational Mechanics, it is good to avoid that something common in the terms can make one confuse the links with the obligatory movements, which are usually only an approximate assumption intended to simplify certain links.
-
-Suppose, to clarify the ideas, that the forces producing the movement are only the weights of various material points, and that the links are formed by rods invariable in length, which connect two points at a time. It will first be noticed that these weights will not produce on the points the same effect as if the points were not linked to each other: indeed, it will not generally happen that they will all descend describing parabolas, as would be the case if they were free. Now, a movement can only be modified by means of forces, so it is necessary that the links which effectively modify the movement produce, during its occurrence, forces that combine with these weights, to compel these points to deviate from the parabolic curves; 
-\newpage
-(pg. 9)\\
-these forces due to the links will be here, for example, the tensions or pressures of the rods that connect certain points. It can be understood that if these forces of the links were known, it would suffice to combine them with the weights to obtain the forces which alone, without the help of any link between the points, would produce on each of them, considered as completely free, the movements themselves which are a consequence of these resulting forces.
-
-We will call \textit{given forces}, those which, like the weights in the example we have just chosen, determine the movement and do not come from the links; we will call \textit{forces of the links}, those which, like the tensions or pressures of the rods, result from the links themselves; finally, we will designate by \textit{total forces}, those which are the resultants of these two systems of forces, and which, without the aid of any link, would produce on the points become completely free, the same movements as those resulting from the given forces when the links exist.
-
-It is known from the Dynamics of a free material point that, knowing the total force that solicits it, one can conclude the movement of the point: it is therefore the total forces that must be sought to determine. Let us examine what relations they can have with the given forces.
-
-To this end, let us note that if, while preserving the links, the total forces were applied instead of the given forces, the same movement would always occur; for these total forces, being capable of producing, without the help of the links, precisely the movements which are compatible with them, nothing will change in this movement by reestablishing them.
-
-Now, the total forces being nothing other than the given forces, to which the forces of the link have been added, it must be that the latter are of such a nature as to change nothing in the movement; they are therefore forces which destroy each other, that is to say, which could produce equilibrium with the help of the links. This consequence can be stated in other terms by saying that the given forces and the total forces are equivalent: for in Statics, two systems of forces are called equivalent, such that one passes from one to the other by adding forces in equilibrium.
-\newpage
-(pg. 10)\\
-This equivalence between the given forces and the total forces is used to express the relationships from which the unknowns of the problem of the motion of a system of material points are derived: everything therefore comes down to putting into equations the conditions of equivalence between two systems of forces. To achieve this, let's first say something about the conditions of equilibrium, which we will then easily transform into conditions of equivalence.
-
-\textbf{(8)} It is known that Statics, whose purpose is to make known the relations that must exist between forces in equilibrium, is entirely contained in the principle of virtual velocities. As we are going to use this principle, it is good to recall what it consists of, indicating how it should be used.
-
-Let us first say what is meant by \textit{virtual velocities.}
-
-When mobile points are subject to certain purely geometrical position constraints, \textit{virtual velocities} are defined as the infinitesimally small spaces that these points would cover simultaneously, leaving their position infinitesimally and taking any of the movements compatible with the state of connection. The term velocity has been given to these infinitesimally small spaces, described simultaneously, because they are proportional to the velocities that the points can take, these being in fact only the ratios between the spaces and the same infinitesimally small time used to traverse them. Virtual velocities have, as can be seen, purely geometrical quantities that depend only on the positional relations of the points; they concern only the geometrical study of machines, and have nothing in common with the forces that produce motion; this is why they are called \textit{virtual}. These virtual velocities being infinitesimally small, enter into the calculation only through the ratios they have with each other; this is why we use at will, either the infinitesimally small arcs, or the velocities with which they can be supposed to be traversed. For two points linked by a lever that can rotate in all directions around a fixed point, the virtual velocities will be small arcs of a curve directed perpendicularly to the arms of the lever, and having between them the ratio of distances to the fixed point.
-
-In the very rare cases where the conditions that bind the positions of the mobile points form what we have called \textit{obligatory movements}, and thus the equations to which the coordinates 
-
-\newpage
-(pg. 11)\\
-of points must satisfy are such that time enters into these equations; the virtual velocities are then the infinitesimally small spaces that the different points would describe simultaneously, if they were made to leave their position without changing the state of connection, as it was at a determined moment; that is to say, assuming that in contradiction with the conditions of the problem, the obligatory movement would be stopped from that moment, and that, so to speak, time has been suspended in the equations that expressed these movements. For example, if it is given as a condition that the axis around which a lever rotates has a uniform translational movement that cannot be disturbed in any way, and is absolutely obligatory, the virtual velocities, for a given position of this lever, will be the infinitesimally small spaces that the points where the forces are applied would describe, if, without the fixed axis continuing its movement, one were to rotate this lever infinitesimally.
-
-Let us also define, before coming to the principle of virtual velocities, what we will call \textit{elementary virtual work:} a term that, for reasons we will explain later, we will substitute for the term \textit{virtual moment,} which has been used until now. 
-
-If a material point that is part of a system is subjected to a force; conceive a virtual velocity for this point, and decompose the force into two, one acting along the same line as the virtual velocity, and the other acting perpendicularly; multiply the component in the direction of the virtual velocity, by this same velocity; the infinitesimally small product obtained will be what some geometers have designated as virtual moment, and what we will call \textit{elementary virtual work.} Now, here is what the principle of virtual velocities consists of.
-
-\textbf{(9)} When forces applied to different material points linked together in any way, destroy each other, or, in other words, are in equilibrium; if one makes the sum of the products that we have just named elementary virtual works for all these forces, taking negatively those of these products for which the component acts in the opposite direction of the virtual velocity, this sum will always be zero, whatever the virtual velocities chosen. Conversely, if the sum of the elementary virtual works is zero for all kinds of 
-\newpage
-(pg. 12)\\
-different virtual velocities, these forces will mutually destroy each other.
-
-This principle provides as many equations as one can take different systems of virtual velocities. The number of these distinct equations is equal to that of the coordinates or geometric quantities that would have to be given to fix the position of the system.
-
-This same principle applies equally well to conditions of equivalence as to conditions of equilibrium. Indeed, since one moves from one system of forces to another equivalent system by adding forces in equilibrium, and since the elementary virtual works due to these forces are null, it follows that for two systems of forces to be equivalent, the elementary virtual works must be equal on both sides.
-
-\textbf{(10)} It is with the help of this principle that all problems of motion are put into equation; it suffices for this to pose the conditions of equivalence that result from it for the two types of forces that we have called given forces and total forces. One derives as many equations as one can choose different systems of virtual velocities; and as it is demonstrated that the number of these different systems is equal to that of the coordinates to be determined as a function of time, it follows that one has as many equations as necessary to reduce the problem to a question of analysis.
-
-\textbf{(11)} We will not dwell on the applications of this method, we will only choose, among the equations that it provides, the one whose consideration is most useful in the theory of machines: we are referring to the equation known until now under the denomination of the equation of living forces.
-
-To obtain this equation, it suffices, in applying the principle of virtual velocities to the equivalence between the total forces and the given forces, to choose for the virtual velocities the infinitely small paths really described in the movement that takes place by virtue of the given forces. It is clear that these small paths fit well into what we have called virtual velocities, since the movements really produced are always compatible with the constraints. In the case only where one would want to consider obligatory movements, the effective velocities would no longer be virtual velocities, because these latter result from a fictitious movement, 
-\newpage
-(pg. 13)\\
-in contradiction with the data of the problem, as we have already said.
-
-But this circumstance does not prevent that one can always, without exception, take for virtual velocities the paths described in the effective movement. It will suffice for this to get rid of the consideration of obligatory movements by not neglecting certain forces and certain initial velocities that take their place; and then there will remain only constraints for which the equivalence between the total forces and the given forces must be established, the latter necessarily including those that contribute to produce the movements that one could have supposed obligatory for a certain degree of approximation. Thus, the effective velocities are always virtual velocities suitable for giving the equations of equivalence between the total forces and the given forces, provided that in the latter are included all those which, with the initial velocities, contribute to the movement, and without which the points would always remain immobile if they did not have these initial velocities.
-
-\textbf{(12)} If \(e\) denotes the arc described by a free moving point, subjected to a force that exists alone to produce the movement of the point, that is, the one that we have called the total force; according to what we have recalled in article (4), the component of this force in the direction of the tangent to the curve described, is expressed as \(\frac{p}{g} \cdot \frac{d^2e}{dt^2}\), denoting by \(p\) the weight of this moving point. As one can take the small arc really described by this point during the movement, for virtual velocity, the elementary virtual work of this total force will be expressed by \[\frac{p}{g} \cdot \frac{d^2e}{dt^2} \cdot de\].
-
-This product must always be taken with the sign that comes from the factors \(de\) and \(\frac{d^2e}{dt^2}\); because this sign will be in agreement with the one that must be chosen to apply the principle of virtual velocities. Indeed, if the component \(\frac{p}{g} \cdot \frac{d^2e}{dt^2}\) falls in the opposite direction of the arc \(de\), it will happen at the same time that \(\frac{d^2e}{dt^2}\) will be of the opposite sign to \(de\).
-
-We will simply call this product \textit{elementary work.} It is natural, indeed, to omit the word virtual which was necessary, 
-\newpage
-(pg. 14)\\
-in general, only to recall that the small arc \(de\) could be taken in a movement that did not take place, and which was only a geometrical conception; while, in this case, this virtual arc becomes the actual arc effectively described.
-
-As the consideration of total forces applies to all material points of a moving system, and the given forces often apply only to some of these points, we will denote by \( s \) the arcs of curves described by these latter points, to distinguish them from the arcs \( e \), described by all points in motion.
-
-Let's consider that each given force, applied to a certain point of the system, is decomposed into two components: one acting in the direction of the tangent to the curve described by this point during the motion, and the other in the direction of the normal. Let \( P \) be the first component with \( ds \) being the small arc described that we take as the virtual velocity, then the elementary work due to each of these given forces will be the product \( Pds \). According to the principle of virtual velocities, we must distinguish those components \( P \) that fall in the opposite direction of the described arc \( ds \), i.e., those that come from forces whose directions make obtuse angles with the arcs, and take negatively the products \( Pds \) they provide. Let \( P' \) denote these components and \( s' \), the arcs described by the points to which they are applied. The forces that make obtuse angles with the direction of velocity, and consequently produce negative elementary works \( P'ds' \), are those that oppose the motion; we will call them resistant forces. The others that make acute angles with the velocities, and consequently produce positive elementary works \( Pds \), are those that favor the motion; we will call them moving forces.
-
-\textbf{(13)} If we use the symbol \( \sum \) to indicate any kind of addition of similar terms in the same equation, \( \sum Pds - \sum P'ds' \) will represent the sum of the elementary works of the given forces, applied to different points of the system, and \( \sum \frac{P}{g} \cdot \frac{d^2e}{dt^2} \cdot de \) will represent the analogous sum for the total forces applied to all material points of the system. Since these two kinds of forces are equivalent, we will have, by virtue of the principle of virtual velocities, 
-\newpage
-(pg. 15)
-\[ \sum Pds - \sum P'ds' = \sum \frac{P}{g} \cdot \frac{d^2e}{dt^2} \cdot de, \]
-the sums \( \sum Pds \) and \( \sum P'ds' \) extending to all forces that produce motion with the help of connections.
-If we represent by \( v \) the speed \( \frac{de}{dt} \) of each material point in motion, this equation becomes
-\[ \sum Pds - \sum P'ds' = \sum \frac{p}{g} \cdot v \cdot dv. \]
-As it applies throughout the movement, containing differential elements corresponding to the same increment \( dt \) of time, we can integrate both sides between any two moments. If \( v \) denotes the speed of any point in the system at the beginning of the time period under consideration, and \( v_0 \) the speed at the end of this time, integrating yields
-\[ \sum \int Pds - \sum \int P'ds' = \sum \frac{pv^2}{2g} - \sum \frac{pv_0^2}{2g}, \]
-The integrals of the first member extending to all the portions of the arcs \( s \), described by the points during the time considered.
-
-This is the formula known as the equation of living forces; it holds for the motion of any system of material points, provided that among the given forces, whose components are \( P \) and \( P' \), are included all those that contribute to the motion through connections and initial speeds.
-
-If we were to consider compulsory movements, then, taking into account only the given forces that must be combined with these compulsory movements, the equation of living forces generally no longer holds; but this is not surprising since, in this case, not all forces that should be included are considered.
-
-\textbf{(14)} Geometers have given different names to quantities of the kind \( \int Pds \): they have been called dynamic effect, mechanical power, quantity of action, and even simply force, by diverting this word from its ordinary meaning. We will continuously make use of this quantity in questions relating to the effect of machines. It can be defined as follows.
-
-\newpage
-(pg. 16)\\
-If a moving point is subjected to a force; if we decompose this force into two components, one perpendicular to the curve described by the point, and the other in the direction of this curve; if we multiply this last component by the differential of the arc traveled, the integral of the differential element formed by this product will be the quantity in question.
-If the tangential component to the curve is constant, the integral becomes the product of this component by the path traveled by the point to which it is applied: in all cases, it is always akin to the product of a force by a length.
-If we imagine that the path traveled is carried in a straight line on an axis, and serves as the abscissa to a curve whose ordinate would be the component force \(P\), the area between this curve, the axis of abscissas, and the two ordinates that correspond to the limits of the integral, will be the value of this quantity.
-
-(15) It is important to note that if \(F\) is the force of which \(P\) is the component in the direction of the arc \(ds\), and if \(\delta\) is the angle that this force \(F\) makes with this arc \(ds\), we will have \(P = F \cos \delta\), and consequently \(Pds = F \cos \delta ds\). But we can consider \(\cos \delta ds\) as the projection of the arc \(ds\) on the direction of the force \(F\); if we call \(df\) this projection, we will have \(Pds = Fdf\), and consequently \(\int Pds = \int Fdf\). Thus we could also define the quantity \(\int Pds\) by means of \(\int Fdf\), by saying that it is the integral of the differential element obtained by multiplying a force that acts on a moving point by the projection of the element of the curve described on the direction of the force. This second way of considering this quantity generally presents less clarity to the mind; we will only use it in particular cases where it offers some advantage in the calculation.
-
-(16) The denomination of quantity of action, used today by some geometers to designate the integral \(\int Pds\), has the inconvenience of introducing the word action, which already has two meanings in Mechanics: it is often taken as a synonym for force, when we speak of action and reaction; in the principle of least action, it serves to designate the integral of the velocity multiplied by the differential of the arc traveled.
-The same inconvenience exists for the expression of mechanical power, where the word power is diverted from its ordinary meaning.
-
-\newpage
-(pg. 17)\\
-The term \textit{dynamic effect} inconveniently introduces the word effect, which we need in the theory of machines to indicate the mechanical operation a machine is intended for.
-
-These various somewhat vague expressions do not seem likely to become widely accepted. We propose the term \textit{dynamic work}, or simply \textit{work}, for the quantity \(\int P \, ds\) defined as we have just described. This term will not be confused with any other mechanical denomination; it seems very suitable to convey an accurate idea of the concept while retaining its common meaning in the sense of physical work. Indeed, the word \textit{work} in this sense implies the idea of an effort exerted and a path traversed simultaneously: because one would not say that work is produced when there is only a force applied to a stationary point, as in a machine in equilibrium; nor would one apply the term work to a displacement carried out without overcoming any resistance. This term is, therefore, very appropriate to denote the combination of these two elements, path and force(*).\footnote{(*) This is to be consistent with this denomination, which seems entirely appropriate to us, that we have already named the product \(p \, ds\) as the elementary work, which is indeed the differential element of what we call work.
-} We will see, as we proceed, that the properties of quantities such as \(\int P \, ds\) provide even more reasons to call them by the name \textit{work}.
-
-As for the term \textit{living force}, previously given to quantities of the form \(\frac{p}{g} v^2\), that is, the product of mass by the square of velocity, we will retain it to avoid introducing too many new terms; however, we will apply this term to half of this product, so that the \textit{living force} will be the product of the mass by half the square of velocity. This slight modification of the old usage will introduce more simplicity into the statements of the principles we have to present. Since the factor \(\frac{v^2}{2g}\) is nothing else than the height from which a heavy body must fall, in a vacuum, to acquire the velocity \(v\), 
-\newpage
-(pg. 18)\\
-it is called the height due to the velocity \(v\): so the living force is the product of the weight by the height due to the velocity. We will see later what motivated the expression \textit{living force}; for now, it should only be considered as a shorthand way to designate this product of weight by the height due to velocity.
-
-\textbf{(18)} Let's revisit the equation previously found
-\begin{equation}
-    \sum \int Pds - \sum \int P'ds' = \sum \frac{pv^2}{2g} - \sum \frac{pv_0^2}{2g}.
-\end{equation}
-Using the terms we have just established, we can state it as follows: \textit{In any system of moving bodies, the difference between the sum of the work quantities due to the moving forces, and the sum of the work quantities due to the resistant forces, over a certain time, is equal to the change in the sum of the living forces of all the masses of the system during the same time.}
-
-When considering the motion between two instances where the velocities were null, that is, from the start of the motion until its cessation, or between two instances where the sums of the living forces have regained the same values, which particularly happens in all cases where the velocities have become the same again; then, the second term of the equation above becoming null, we have
-\begin{equation}
-    \sum \int Pds = \sum \int P'ds'.
-\end{equation}
-That is to say, in this case, \textit{the sum of the work quantities due to the moving forces is equal to the sum of the work quantities due to the resistant forces.}
-
-This statement encompasses the most important principle of Mechanics; it can be named \textit{the principle of the transmission of work}, because indeed, when considering the motion from the onset of velocities until their cessation, the work produced by the moving forces, that is, those that come from the engine, is entirely found in the work due to all kinds of resistant forces.
-
-\textbf{(19)} Let us agree, once and for all, to denote by the \textit{first} and \textit{last} instance, those that limit the integrals \(\int Pds\) and to which correspond the velocities\(v\) and \(v_0\), so that 
-\newpage
-(pg. 19)\\
-it is always between the first and the last instance that the equation of living forces applies only. Let's also agree to refer to the work done by the moving forces as \textit{motive work}, and the work done by the resistant forces as \textit{resistant work}.
-
-Consider the motion from an initial moment when the velocities are zero; the equation of \textit{living forces} becomes
-\[\sum \int P \, ds = \sum \int P' \, ds' = \sum \frac{pv^2}{2g} .\]
-Since the right-hand side is necessarily positive, the motive work must outweigh the resistant work when calculated from the moment the motion begins.
-
-If we assume in this last equation that there are no resistant forces until the final moment, or at least that they can be neglected, we find
-\[\sum \int P \, ds = \sum \frac{pv^2}{2g} ;\]
-This can be stated as, \textit{when there are no resistant forces, the work produced by the moving forces, or the motive work, is measured by the sum of the living forces of the system at the last moment.}
-
-Conversely, suppose the system was already in motion at the first moment, all moving force P ceases to act, and there are only resistant forces P', taking the last moment as the one where the velocities v are annihilated, we have, by changing the signs of both sides,
-\[\sum \int P' \, ds' = \sum \frac{0}{2g} .\]
-This equation can be stated \textit{as, in the case where there are only resistant forces, the resistant work they must produce to annihilate the motion is measured by the sum of the \textit{living forces} that the system had at the first moment when these forces began to act.}
-
-\textbf{(20)} The general equation of \textit{living forces}, namely
-\[\sum \int P \, ds - \sum \int P' \, ds' = \sum \frac{pv^2}{2g} - \sum \frac{pv_0^2}{2g},\]
-does not assume any continuity in the forces P and P'; they can 
-\newpage
-(pg. 20)\\
-jump from a finite value to zero and remain null for a part of the motion, either together or separately; they can reappear suddenly and change in value abruptly, without passing through the intermediate degrees: none of this will prevent the equation from being valid. The integrals \(\int P \, ds\), \(\int P' \, ds'\) are always calculated as one would calculate plane areas included between the axis of abscissas and different portions of discontinuous curves which would each be terminated at certain ordinates.
-
-(21) Everything we have just discussed applies to a machine in motion, as long as it is first considered rationally, that is, it is assimilated to a system of material points linked together in any manner.
-
-From now on, we will use the term \textit{machine} to denote the moving bodies to which we apply the equation of the living forces: in this sense, a single moving body would be a machine just as much as a more complex assembly. In each particular case, once it is well understood what moving bodies compose the machine in question, it will suffice, to apply the previously established principles, to know well what masses must enter into the calculation of the living forces, and what moving and resistant forces must enter into the calculation of the work quantities. We will provide some clarifications on this subject.
-
-First, concerning the living forces, care must be taken that the material points considered as part of the machine at the first moment are still the same material points that are part of it at the last moment. The calculations of the different terms of the equation of the living forces must be applied to the same system, and in this sense, the same system means the assembly of the same material particles: they must be followed in their movement, and their velocity taken at the first and last moment. For instance, if a moving fluid is among the machine's bodies, to apply the equation of the living forces to it, as we will show it can be done, it will be necessary to include the same fluid particles in the calculation of the living forces at the first and last moment, and not different particles, even though they would occupy the same place at these two moments.
-\newpage
-(pg. 21)\\
-
-Regarding the forces, it must be noted that those which should enter into the first term of the equation of the living forces are only the forces due to the motor and the resistances. One should not include those resulting from the connections, that is, the actions and reactions that the bodies composing the machine exert on each other. However, it is necessary to consider the frictions produced by these actions and reactions, noting that each friction between two bodies that are part of the machine introduces a force applied to each of the bodies in contact. If all the forces due to the connections were introduced into the equation of the living forces, they would give, with the exception of frictions, only quantities of work that would cancel each other out at each instant; so that they would not appear in the calculation of the work that forms the first term of the equation of the living forces: this is where this equation offers very convenient applications.
-
-When one wants to suppose that a body which was initially part of the machine no longer forms part of it, it is sufficient to determine what forces it exerts on the other bodies of the machine with which it is in contact, and to include these forces in the equation of the living forces: so that these same forces, which initially did not appear, or at least only entered for the double frictions they produce, then appear when the body is no longer part of the machine and contribute to produce either the moving work or the resistant work. In this case, instead of considering the two frictions on the two contact bodies, only the one acting on the body that is part of the machine is taken into account.
-
-When, in the application of the equation of the living forces, one wants to get rid of the consideration of certain moving or resistant forces exerted by bodies, it is only necessary to consider the given forces that are applied to these bodies, without having to deal with the actions that they exert on the different parts of the machine: only the frictions resulting from these actions must be taken into account. In many cases, with the ability to go back more or less far in the series of bodies that communicate their movement to choose those that end the 
-\newpage
-(pg. 22)\\
-machine and receive the moving work or the resistant work, the equation of the living forces is simplified, and the useful consequences that can be derived from it are more easily perceived.
-
-(22)The machines that will particularly occupy us in the rest of this work are those intended to transmit motion to tools that must continuously operate a certain manufacturing process. We can apply the preceding principles to these machines, provided that solid bodies are conceived as perfectly realizing certain geometrical connections. We will therefore initially remain in this rational conception and establish in this hypothesis the consequences of the preceding principles: we will see later how these consequences must be modified when we cease to consider bodies as unchangeable in their forms.
-
-In a machine that works continuously, such as those using waterfalls or steam for manufacturing, all the quantities \(\int Pds\) continuously increase over time, except for a few moments when they may remain stationary when the forces \(P\) are zero. It is clear that these integrals can never decrease, since the elements \(Pds\) are always taken positively. When there is periodicity in the phenomena of motion, as usually happens in machines whose movement continues indefinitely, the motor work due to a second period is added to that of the first, and so on; and as the work due to each of the periods is essentially the same, since we assume that all circumstances are almost the same, it follows that the total motor work that must appear in the equation of the living forces becomes essentially proportional to the number of periods, that is, roughly to the time during which the movement is considered. As for the sum of the living forces, it cannot increase indefinitely during this time, since experience shows that speeds always have a maximum, which they even quickly reach. This maximum sum of the living forces is equal to the difference \(\sum \int Pds - \sum \int P'ds'\), the integrals being taken during the time it took for the machine to reach this maximum. This time is usually only a few minutes; thus the sum of the living forces, and even 
-\newpage(pg. 23)\\
-more so its variation over any given time \(\sum \frac{pv^2}{2g} - \sum \frac{pv_0^2}{2g}\), will have only a very small value compared to that of \(\int Pds\) taken for a considerable period, like an hour or a day.
-
-From the equation \[\sum \int P \, ds - \sum \int P' \, ds' = \sum \frac{pv^2}{2g} - \sum \frac{pv_0^2}{2g},\] it follows that the difference between the motive work \(\sum \int P \, ds\) and the resistant work \(\sum \int P' \, ds'\) can only be very small compared to the value of these quantities. 
-
-Thus, \textit{in any machine of the kind we are dealing with, where the sum of the living forces is subject to a maximum that it reaches in a limited time, there is essentially equality between the motive work and the resistant work, calculated both for a somewhat considerable time compared to the time it takes for the machine to reach its maximum speed.} This is the perspective, as we will increasingly see, under which the principle of the transmission of work finds its continual application to machines intended for various fabrications using continuous motors, such as waterfalls, steam, and animals.
-
-Although, in all that we have just said, we consider the bodies that are part of a moving machine as unalterable in their forms, thus making a rational conception of machines, nothing prevents the application of all the preceding principles in cases where frictions cannot be neglected; it is sufficient to consider these as giving rise to forces directed tangentially to the bodies in contact, and to take into account the quantities of work resulting from these forces. We will see in the next chapter how, with the help of some experimental data, we can calculate these quantities of work: for the moment, it suffices to understand that the introduction of these forces among those given does not change the preceding principles.
-
-\textbf{(23)} If we were to conceive, for a moment, machines in an entirely rational manner, by abstracting from these frictions; then, in all cases where the resistant forces are exerted by bodies, we can present the preceding statements from a perspective that is apt to highlight the appropriateness of the
-\newpage
-(pg. 24)\\
-denomination of the principle of the transmission of work, and at the same time to justify the name of living force given to the product of the mass by half the square of the velocity: this is what we are going to show.
-
-If a resistant force is produced by the action of a body on one of the points of the machine, it in turn will receive an oppositely directed pressure; and as it will generally also be mobile, the force to which it is subjected will give rise to a quantity of work. We shall see that this quantity, when friction is disregarded, is equal to the quantity of resistant work produced on the machine.
-
-First, let us note that the points of the system will receive resistant forces from the external points immediately in contact with them in only two ways: either the two pressing or pulling points will be linked to each other and will describe the same elementary path \( ds' \); or the two points will not be linked, and the bodies they are part of will slide over each other while pressing, so that the elementary paths of the contact points will not be the same. In both cases, the force acting on the system will react with equal intensity on the external body. In the first case, the points in contact describing the same elementary path \( ds' \) at each moment, it follows that the components of the forces in the direction of this path will be the same, only one of them producing a resistant work on the machine, the other, which is opposed to it, will produce an equal motive work on the external body. Thus the resistant work \( \int P' ds' \) will be equal to the motive work produced by the force acting on the external body. In the second case, the force acting on the machine and reacting in the opposite direction on the external body with equal intensity, will necessarily be normal to the two contact surfaces, if the friction between the surfaces is disregarded. To calculate the work due to this force, let us use the second expression we have seen that can be given to it, namely, the integral \( \int F' df' \); denoting by \( F' \) the force in its own direction, and by \( df' \) the element of the described path projected onto the direction of the force. The contact points having, as we know, equal velocities in the direction of the normal to the contact surfaces, that is, in the direction of the force, the projections \( df' \) of the arcs described during the time \( dt \) on the direction of this force, which are proportional to
-\newpage
-(pg. 25)\\
-these equal velocities, will also be equal; thus the resistant work \( \int F' df' \) due to the force \( F' \) acting on the machine, will be equal to the motive work produced on the external body.
-
-We thus see that, while through the forces developed by certain bodies, there is resistant work produced on a machine, these bodies receive an entirely equal motive work, provided that friction is disregarded. Thus, in this case, one can substitute the machine's resistant work with the motive work produced on the external bodies. Several of the preceding statements can, therefore, be presented in other terms. Thus, it can be said that \textit{when disregarding friction, the difference between the motive work that a system of moving bodies receives, and the motive work that these bodies produce on bodies resisting this movement, is equal to the variation of the sum of the living forces of the system: so that when this sum of the living forces has not changed, or when the variation can be neglected, all the motive work is transmitted to the points where the resistant forces are produced};
-
-\textit{That the motive work that a system already in motion can produce on external bodies until this motion is annihilated, is measured by the sum of the living forces at the first moment when it began to act.}
-
-These statements, thus presented, under the assumption that it is bodies that produce the resistant forces, can take with more reason the title of the principle of the transmission of work, which we had already given to the first interpretation of the equations that provide them.
-
-\textbf{(24)} We can now explain the origin of the denomination of living force for the quantity \(\frac{pv^2}{2g}\) when acting on other bodies until it has lost all its speed. This quantity \(\frac{pv^2}{2g}\) is therefore the measure of the work that could be maximally retrieved from the speed of a material point; 
-\newpage
-(pg 26)\\
-it is thus the available work. As what we now call work was formerly referred to as force, it is understandable that what we might now call available work or work possessed by a body was termed living force. We will sometimes use these expressions: thus, when we speak of the work possessed by a body with weight \( p \) and velocity \( v \), we mean the quantity \( \frac{pv^2}{2g} \). But most often we will retain the old denomination of living force, to distinguish the work that can be derived from an acquired velocity from that which can be obtained from compressed springs, and from any other motor. As we have already said, one can replace \( \frac{v^2}{2g} \) by the height \( h \) due to the velocity \( v \); the quantity \( \frac{pv^2}{2g} \) then becomes \( ph \), and the available work is equal to that resulting from the effort \( p \) exerted on a point in the direction of a path traveled equal to \( h \).
-
-It is often said that \( ph \) is the work required to raise a weight \( p \) to the height \( h \); but this is only exact in a certain sense. Indeed, if \( \int P \, ds \) represents the motive work produced to raise the weight \( p \) to the height \( h \), as the resistant work is \( ph \), we will have, by the equation of living forces,
-\[ \int P \, ds - ph = \frac{pv^2}{2g} - p \frac{v_0^2}{2g} \]
-where \( v \) and \( v_0 \) are the velocities of the weight at the starting and arrival moments. Now, it is only in the case where these velocities are equal that the motive work \( \int P \, ds \) equals \( ph \); thus, it is with this restriction only that \( ph \), or \( \frac{pv^2}{2g} \), should be understood as the work necessary to raise the weight \( p \) in a vacuum to the height \( h \) or \( \frac{v^2}{2g} \).
-
-(25) It follows from what we have said so far that what we have called work is a quantity that cannot be increased by the use of machines: these are intended to increase or decrease either the force or the path described; to divide them into several portions, to modify their positions and directions; in a word, to change everything that constitutes a force and a path, but without ever being able to increase the work. The portion of this 
-\newpage
-(pg 27) \\
-quantity that machines can reproduce is all the less different from what they have received, the less considerable the frictions are. If we were to assume that we could construct machines without friction, we could then say that work is a quantity that is not lost.
-
-To easily represent the transmission of work in the movement of machines, one can compare it to that of a fluid spreading through bodies, communicating from one to another at points of contact as points of passage; either dividing into several streams, in the case where one body pushes several others; or merging several streams, in the case where several bodies push a single one. This fluid could also accumulate in certain bodies and remain in reserve there until new contacts or contacts with greater flow release a larger quantity. This work in reserve, which we liken here to a fluid, is what we have called living force; it depends, as we know, on the velocities possessed by the bodies. Continuing with this comparison, a machine, in the sense commonly given to this word, is a set of moving bodies arranged to form a kind of channel through which work flows to be transmitted as fully as possible to the points where it is needed. Once produced by the motor, the work passes successively from one body to another; it can accumulate, divide, and merge. We will show later that it is gradually lost through friction and the breaking of bodies, or that it spreads into the ground, where it becomes imperceptible as it extends indefinitely.
-
-(26) We will now show that, from the properties of machines relative to work, this quantity serves as the basis for evaluating motors in commerce; that it is to this same quantity that all questions of economy in the use of motors mainly relate.
-We produce nothing that is necessary for our needs except by moving bodies or changing their form; which can only be done on the earth's surface by overcoming resistances and exerting certain efforts in the direction of the movement. It is therefore useful 
-
-\newpage
-(pg 28)\\
-to have the ability to produce such displacement accompanied by force in the direction of the displacement, that is to say, the ability to produce the quantity that we call \textit{work}.
-
-Whether it is drawn from animals, from moving water or air, from the combustion of coal, or from the fall of bodies, it is limited for each time, for each place; it cannot be created at will. Machines merely employ and economize work without being able to increase it; thus, the ability to produce it is bought, sold, and economized like all useful things that are not in extreme abundance.
-    If we did not have machines at our disposal, two different displacements would be two things of distinct natures, generally admitting no mathematical basis for their evaluation: it would be for these displacements as it is for many useful things whose values are not generally established on mathematical calculations. But machines, as we will see, provide the means to establish for displacements bases of evaluation similar to those we have for quantities of the same material.
-
-When a machine, which receives its moving forces from a certain motor, is intended to perform a certain useful effect, it results that the points acting on the bodies to be displaced or deformed receive from these bodies resistant forces; but these forces are generally not the only ones producing resistant work; friction and various other resistances, from which one cannot free oneself, add resistant work to that resulting from the useful effect. However, since there is a rational possibility to leave subsisting as resistant forces only those arising from the useful effect, or at least to considerably reduce all other forces compared to these, we can initially reason under this hypothesis, just as one first reasons about machines by disregarding friction: it will be easy to see how, in practice, to modify the conclusions drawn from this first abstraction. Let us therefore assume, for the moment, that all resistant work is produced by the useful effect alone.
-
-Note that if we have the ability to produce a displacement by exerting a certain effort, we can, with the help of a machine that appropriately modifies the movement and the forces,
-\newpage
-%note on the phrasing "on the machine" - I was unsure if this was the correct translation and asked ChatGPT about it. I may need to follow up with other resources to confirm that this is correct. 
-%from conversation with ChatGPT about the phrasing: [ChatGPT]"It was common to describe machines as objects through which forces or actions passed. This makes "on the machine" a faithful reflection of both the original wording and the era's mechanical philosophy. Any deviation to "by the machine" might risk modernizing the text too much, potentially altering Coriolis's meaning."
-%[me]"Nowadays we would write "by the machine", but "on the machine" makes sense with the context of how work was thought of at the time"
-%[ChatGPT] "You're absolutely right—"by the machine" would feel more intuitive in modern writing, especially since we now tend to personify machines as active agents in producing work. But sticking to "on the machine" honors the context of how Coriolis and his contemporaries conceptualized mechanical systems as passive intermediaries in the transmission of forces."
-
-This perspective reflects how work was understood in the 19th century, when machines were seen less as creators of energy and more as entities through which energy was transmitted or transformed. Coriolis's focus on resistant work reinforces this viewpoint, as it emphasizes the physical interaction of forces and motions happening "on" the machine's components.
-(pg.29)
-apply this ability to carry out a certain fabrication, for example, to grind wheat or to spin thread. It is clear that the milling of each liter of wheat or the spinning of each meter of thread, generally accompanied by the same circumstances, will require the points on which the machine acts to describe the same path while receiving the same force. Thus, this milling or twisting of thread will always result in the production of the same quantity of what we have called \textit{resistant work}: consequently, the number of liters of wheat milled or meters of thread twisted by means of this capacity for motion will be proportional to the resistant work produced on the machine by this milling or spinning. Now, according to the assumption we just made, that external resistances unrelated to the useful effect could initially be neglected, this quantity of resistant work alone constitutes all the work produced on the machine, so that, when considering this work over a period of time that is not very short, it is approximately equal to the motive work; this motive work will therefore also be proportional to the quantity of wheat milled or thread twisted.
-
-If one wants to compare two capacities for motion, it will suffice to imagine that machines are constructed through which these capacities can be applied to the same production—for example, milling wheat: the number of liters of wheat that can be milled will similarly be approximately proportional to the quantities of motive work produced on these machines using these capacities for motion. But it is clear the comparative value of the two milling capacities will be measured by the numbers of liters of wheat milled; and since these quantities are approximately proportional to the motive work produced on each machine, it follows that the two capacities for motion will have values proportional to the quantities of work they can produce on these machines.
-
-Thus, it is due to the ease that we have today, and will increasingly have, of constructing machines to apply different capacities for motion, that is, different motors, to execute the same type of work with these machines, that we can establish a method of comparison between these motors through the quantities of the same work they are capable of producing. The invention, improvement, and multiplication of machines have
-\newpage
-(pg 30)\\
-led to and will increasingly spread this method of evaluation, much like the invention and improvement of tools for dividing materials have led to and spread the measurement of their value in commerce by the geometric quantity called volume.
-
-\textbf{(27)}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newpage
-\begin{center}
-\huge\bfseries CHAPTER II
-\end{center}
-\vspace{10mm} % Space after the chapter title
-\markboth{CHAPTER II}{}
-
-% Add the chapter to the table of contents
-\addcontentsline{toc}{chapter}{CHAPTER II}
-
-\textbf{Calculation of Work for Weights – For Mutual Actions – On Stiffness; its Influence on the Distribution of Work in Slow Compressions – On Work Produced by the Expansion of Gases; Application to the Calculation of Work Derived from Steam with a Given Amount of Heat – On Work Transmitted by a Fluid Current, to a Channel and to Moving Surfaces – On Work Due to Friction – Calculation of Living Force – The Principle of the Transmission of Work Still Applies to Certain Relative Movements.}
-\vspace{4mm}
-
-% Manually formatted 'section' title
-\vspace{4mm}
-\textbf{33. Calculation of Work Due to the Gravity of Moving Bodies.}
-\vspace{4mm} 
-
-% Add the section to the table of contents
-\addcontentsline{toc}{section}{33. Calculation of work due to the gravity of moving bodies.}
-
-We will now focus on calculating work in different circumstances where it can be reduced to rules that can be stated.
-Let's first examine the work that is due to weights.
-Recall that the work element due to a force F, being the product \(Pds\) of the small arc \(ds\) by the component \(P\) of this force in the direction of this arc, can also be expressed by 
-
-the product of the force \(F\), by the projection of the element \(ds\) onto the direction of the force. Therefore, if this force \(F\) is a weight and acts in the direction of the vertical, and \(z\) represents the vertical ordinate of the moving point, counted positively from top to bottom, such that \(dz\) is positive when the weight descends; \(dz\) will be the projection of \(ds\) onto the direction of the force, and \(Fdz\) will be equal to the work element 
- \(Pds\). Furthermore, since \(Pds\) must enter the general equation of living force with a negative sign when the angle of the force F with ds is obtuse, that is, when dz is negative in the movement actually produced, it follows that the work element\(Fdz\) will take the sign it must have in the equation of living force, and can be introduced there by algebraic addition, leaving it to \(dz\) to determine its sign.
-
- The work introduced into the general equation of living force by weights will be expressed as
-\[\int p\,dz + \int p'\,dz' + \int p''\,dz''\ + etc. \]
-Since the weights p, p', etc., remain constant during the movement, it follows that if we denote by z0 and z the ordinates of the corresponding positions at the first and last instant, these integrals become
-\[ p(z-z_0) + p'(z'-z_0') + p''(z''-z_0'') + etc.\]
-or alternatively,
-\[ pz + pz' + pz'' + etc. - pz_0 - p'z_0' -  p''z_0'' - etc.\]
-
-If we denote by\(P\) the total weight \(p+p'+p'' + etc.\), and by \(\zeta\) and
-\(\zeta'\) the ordinates of the center of gravity of these weights at the first and last instant, the previous expression becomes 
-\[P(\zeta-\zeta'),\]
-a result that can be stated by saying that the motive or resistant work due to several weights is equal to the product of the total weight by the vertical height which the center of gravity has lowered or raised, or in other terms, that it is equal to the work due to a single force, equal to the total weight, and applied at the center of gravity of all the weights.
-
-If this center of gravity has lowered, the work produced during the movement will be motive work; if it has raised, it will be resistant work.
-
-
-We note here, concerning the signs of the elements \(pdz\), that in general when seeking the motive work produced by certain forces, as it is always with the intent to introduce it into the equation of living force, we should not make any other distinction between motive work and resistant work than that which results from their signs; and as these are always enclosed in the same formula which provides them as they should be, we are sure that when calculating a certain motive work by a formula, this formula takes into account the resistant work and only gives the excess of the first over the last; that is to say, it only gives what should be introduced into the equation. Thus, in the case of weights, we can suppose that a part has descended
-\newpage
-
-
-during the motion, and another part has risen; always the excess of the motive work over the resistant work is expressed by the same integral which becomes the product of the total weight by the height which the center of gravity has descended.
-The previous statement, where the center of gravity is introduced, assumes that the weights are constant, that is, the same quantity is considered during the motion. If certain weights begin to act or cease to act on the machine at a different instant from others, then it would no longer be permissible, to obtain the total work, to replace all the weights with a single force applied at their center of gravity.
-The error that would be made by operating in this way stems from the fact that, when various weights occupying certain positions in space are joined by another weight not situated at the center of gravity of the first, it results in a displacement of the total center of gravity. This displacement would always persist, even if all the weights were immobile, that is, even if no work was produced; therefore, this kind of displacement, which is foreign to the paths traveled by the weights and consequently to the work produced, should not be included. This is what would happen if we considered the work due to a variable force applied at the center of gravity. To calculate the work, we should simply take the sum of the products of each constant weight, multiplied by the positive or negative height from which it has descended. If we imagine, for example, that a first weight \(p\) descends from a height \(h\), and that when this weight has already begun its descent, a new weight \(p'\) begins its own and then descends from a height \(h'\); the total work produced by these two weights will be \(ph + p'h'\). If we want to move to a sum of very small elements, the sum \(ph + p'h'+etc.\), will become an integral that will have as its value the sum of the moments with respect to a horizontal plane of all the weights when they are located at their arrival position, minus the sum of the moments of the same weights placed at their starting positions. 
-This value will not be 
-\(\iint P\zeta\)\, \(P\) being the total weight, and \(\zeta\) the vertical ordinate of the center of gravity. To suppose this, it would be necessary to assume that all the elements of weight, which in fact may not act simultaneously, nevertheless start together, and arrive together after having descended or ascended with different velocities. The total weight being thus constant, the work produced during the displacement will be conceived as the total weight being thus constant, the work produced during the displacement conceived 
-
-\newpage
-
-in this manner can be calculated by the product of the total weight by the path described by the center of gravity. However, it is important to note that this center of gravity will be that of a hypothetical union of the elementary weights, and not that of the weights arranged as they are in reality.
-(33)
-It is good to show that the calculation of the work due to moving weights is further simplified when a certain number of these weights takes the place occupied by other equal weights, as occurs when dealing with a determined mass of liquid in motion in a channel or any container. Then, if the time during which one wants to calculate the work is not long enough for the entire volume of water considered to have left the entire space of its first position, there will be a part of the container that will always have been occupied by a portion of this water. Let's examine the expression of the work in this case.
-
-Suppose weights whose sum is Constant and equal to \(P\); the work they produce will have the expression \[P\zeta - P\zeta_0,\] \(\zeta\) and \(\zeta_0\) being the ordinates of the positions of the center of gravity at the first and last instant. If \(p\) denotes a part of the total weight, formed by a series of particles that, at the last instant, occupy positions that were occupied at the first instant by other particles forming an equal weight, it follows that by calling \(z\) the ordinate of the center of gravity of these weights \(p\) in their common position at the first and last instant, and by designating \(z'\) and \(z_0'\) the ordinates of the center of gravity of the rest of the weights 
-\(P-p\) at the first and last instant, the total work \(P\zeta_P\zeta_0\) can, by virtue of the known properties of centers of gravity, be transformed into
-\[pz+(P-p)z'-pz-(P-p)z',\]  
-or by reducing
-\[(P-p)z'-(P-p)z_0',\]  
-
-
-an expression which is nothing other than the work that would be produced by only the weights \(P-p\), while their center of gravity has descended by the height \(z'-z_0'\). This result shows that the work, in this case, can be evaluated without considering the part of the heavy bodies whose 
-
-\newpage
-Page (40) \\
-\begin{comment}
-This passage describes the calculation of work in fluid dynamics, particularly with water flow in canals, and introduces the concept of work due to mutual reactions, using the example of repulsive forces in a spring system.
-\end{comment}
-first placement has been occupied by other bodies equal in weight, and it is sufficient to calculate it, as if heavy bodies had moved from the position of the first weights \(P-p\) at the first instant, to the position of the other weights \(P-p\) at the last instant.
-
-
-Thus, in the case of a current of water flowing in a canal, the work produced will be the same as if a mass of water had moved from the vacated position at the top to the newly occupied position at the bottom. For example, if a gate in a water reservoir is opened and one cubic meter of water is allowed to flow out horizontally, the work due to the very slight descent of all the water particles in the reservoir during the movement will be the same as if the cubic meter of water that flowed out had descended from the upper layer of the pond to occupy the space where it is found after the flow. This result is apparent without demonstration when water is drawn from the surface because then the cubic meter drawn indeed descends the entire height of the reservoir; but when a gate at the bottom is opened, it is not the water that occupied the upper layer that comes out through the gate, and nevertheless, the work produced has the same value as if it were that same water that had descended, without the rest of the liquid participating in the movement.
-
-
-% Manually formatted 'section' title
-\vspace{4mm}
-\textbf{34. Work due to mutual reactions, such as springs, attractions or Repulsions.}
-
-\vspace{4mm} % Space after the section title
-
-
-% Add the section to the table of contents
-\addcontentsline{toc}{section}{34. Work due to mutual reactions, such as springs, attractions or
-Repulsions.}
-
-
-After examining everything related to work due to weights, we will now consider that which is due to mutual reactions.
-Suppose there are, among the forces applied to a system, mutual attractions or repulsions, such as would be, for example, forces produced by a spring that acts either to bring closer or to push apart with equal forces the points placed at its ends. Let's seek the work produced during the movement by two forces of this kind.
-Let \(R\) denote the force of the spring which we will suppose to be repulsive, and \(r\), the distance separating the two points on which the repulsions act. These forces will be directed in the direction of the line \(r\), and will tend to increase it. Represent by \(ds\) and \(ds'\) the infinitely small arcs described during the movement by these two points, and by \(\delta\) and \(\delta'\) , the angles formed by the directions of these arcs \(ds\) and \(ds'\) with the repulsive forces, or, which amounts to the same thing, with the extensions of the line r that joins the points where the forces are applied.
-The element of work due to the force \(R\), which acts on the first point
-\newpage
-(41)\\
-that covers the path element \(ds\), will be \(Rcos \delta ds\); the work produced in a given time will therefore be \( \int Rcos \delta\,ds\), the integral being taken between the first and last instant.
-
-The same will be true for the other force R applied to the second point; the work it will produce will be \(R cos \delta ds\)
-The total work due to the two forces of the spring will therefore be
-\[ \int R \cos \delta \, ds + \int R \cos \delta' \, ds' \]
-or alternatively,
-\[ \int R (\cos \delta \, ds + \cos \delta' \, ds') \]
-The distance \(r\) can be considered as a function of the two arcs \(s\) and \(s'\) described by the moving points, and by the principles of differential calculus we have
-\[dr = \frac{{dr}}{{ds}} ds + \frac{{dr}}{{ds'}} ds'\]
-
-The partial derivatives \(\frac{{dr}}{{ds}} and \frac{{dr}}{{ds'}}\) and are nothing other than \(cos \delta\) and \(cos \delta'\); because the partial \(dr\) which is in the numerator of the first fraction, for example, being the increase that the distance \(r\) would take only if the first point moved by \(ds\), that is, if the line \(r\) turned around to the second point, it will be the projection of \(ds\) on the line \(r\); so that we have \(dr=cos\delta ds\), or \(\frac{{dr}}{{ds}} = cos \delta \), this equality existing both for the sign and for the numerical value. As we also have \(\frac{{dr}}{{ds'}} = cos \delta' \), it follow that
-
-\[cos \delta \, ds + \cos \delta' \, ds' = dr\]
-
-
-If the forces R were attractive, we would have 
-\( \frac{{dr}}{{ds}} = -\cos \delta, \frac{{dr}}{{ds'}} = -\cos \delta' \)
-which would give
-\[ \cos \delta \, ds + \cos \delta' \, ds' = -dr. \]
-
-Therefore, by substituting in \(\int R (\cos \delta \, ds + \cos \delta' \, ds')\), which is the expression 
-for the work produced by attractive or repulsive forces, we have:
-
-- for the repulsive forces, \(\int R \, dr\),
-- for the attractive forces, \(-\int R \, dr\).
-
-
-This result is extremely remarkable in that it no longer depends on the arcs 
-\(s\) and \(s'\) traveled by the points.
-
-\newpage
-(42)  \\
-% Translated text with LaTeX equations
-To obtain these integrals, it is not necessary to know the precise movement of each point; it suffices to understand how the force \( R \) varied with respect to the distance \( r \). 
-The definitive sign of the work \(\int R \, dr \) will come from two overlapping signs: first, from the direction in which the force \( R \) acts, and second, from the fact that since the limits must follow the order of time, \( dr \) will be negative if \( r \) decreases over time. From these two signs, a positive quantity will ultimately result when they are of the same type, that is, when the force acts in the direction of the path described along the line \( r \), and a negative quantity when they are of different types, that is, when the force acts in the opposite direction of this path. Thus, in the first case, there will be motive work produced, and in the second, it will be resistant work.
-
-This motive or resistant work can be likened to another work produced under simpler circumstances. For if we disregard the actual movement of the points, and suppose that one of the ends of the line \( r \) being fixed, the other approaches or moves away without this line \( r \) changing direction, the work due to the force \( R \) applied to the mobile end will be, according to the definition, \( \int R \, dr \) or \( -\int R \, dr \). It will be motive or resistant, depending on whether the force \( R \) acts in the direction of \( dr \), or in the opposite direction. Thus, this work will be entirely equal and of the same type as that produced when the actual movements of the points are not disregarded; so much so that it can be said that when there are attractive or repulsive forces between two points in a machine, the work due to these forces is the same as that which would have been produced if, without giving any movement to one of these points, nor changing the direction of the distance that separates them, the other point had been moved as much as it was in the movement, without modifying the manner in which the attraction or repulsion varied with this distance.
-
-This theorem has many applications in machines because the forces that bodies develop through their compression or extension are composed of mutual attractions or repulsions, each presenting two equal actions in opposite directions, which is the only condition of the preceding statement.
-
-\newpage
-(43) \\
-% Translated text with LaTeX equations
-In the following, we will refer to these reciprocal actions briefly as reactions or springs.
-
-\vspace{4mm}
-\textbf{35. Reactions or springs, either elastic or imperfectly elastic.
-}
-\vspace{4mm} 
-
-% Add the section to the table of contents
-\addcontentsline{toc}{section}{35. Reactions or springs, either elastic or imperfectly elastic.}
-
-When the reactions \( R \) regain the same values when \( r \) returns to the same magnitude, that is, when they remain the same functions of distances, we will call them elastic. We will say that reactions are imperfectly elastic when the forces do not regain values as large when the distance between the points returns to the same. This is thus to apply to reactions in general what is said of springs.
-
-For elastic reactions, the integral \( \int R \, dr \) is null between two instances for which the distance \( r \) has returned to the same: because then this integral is divided into two perfectly equal and opposite sign portions, one for the extension of \( r \), the other for its decrease; so that the motive work and the resistant work, produced between the two instances for which \( r \) has resumed the same value, are equal and compensate each other. There is then in the first member of the equation of living force neither loss nor gain between these two instances.
-
-A certain amount of motive work having been used to compress or extend a perfectly elastic spring, it can then return to the original length, and reproduce motive work perfectly equal to that which it received, since the two portions of the integral \( \int R \, dr \), one for the resistant work that the spring produces in deforming, the other for the motive work it communicates in returning to the original length, will be perfectly equal. It is in this sense that it is said that a compressed spring returns all the work it received and that it can be likened to living force, that is to say, to a body possessing velocity, and able to produce a certain amount of work equal to that which it received.
-
-If the reaction is not perfectly elastic, the integral \( \int R \, dr \) will then be the difference between the quantities of resistant work and motive work produced, on the one hand during the disturbance of the spring, and on the other during its return to the original length. To represent this value of \( \int R \, dr \) extended to a series of oscillations of the spring, one only has to conceive a curve of which \( r \) is the abscissa and \( R \) the ordinate. The first disturbance of the spring, producing a force \( R \) directed in the opposite sense of \( dr \), will give a resistant work \( \int R \, dr \) which will be the area of this curve; then the spring returning to its 
-\newpage
-(44) \\
-starting position, the work produced will be motive: it will subtract from the first precisely as the area generated, when the abscissa \( r \) decreases, subtracts from the first area generated, and brings it back to zero when the abscissa returns to the starting point, if however the ordinate \( R \) has retained the same values on the way and on the return.
-% Translated text with LaTeX equations
-But if \( R \) becomes smaller when \( r \) returns to the same value, then the second area described will not be equal to the first; the difference, which will be resistant work, will be the area between the two curves provided by the two values of \( R \). If the oscillations repeat, and there is always thus a decrease in the force \( R \), there will be with each oscillation an excess of resistant work over motive work: this will be the total difference that must be introduced into the equation of living force for the value of the integral \( \int R \, dr \), that is, for the total value of the resistant work due to the reactions of the spring. However slightly elastic this spring may be, this total difference, which is the sum of a series of alternating sign terms all decreasing, can never be more than the largest term of the series, that is, the work that would be used to produce the greatest compression and the greatest extension that occurred during the movement.
-
-It follows from the foregoing, that if a spring is used as an intermediary to transmit to a body the work that a force produces on another body, it will be transmitted in its entirety, at least substantially, if the time during which the movement is considered is considerable enough that we can neglect in front of these quantities of work, on the one hand, that which is due once and for all to the greatest compression and to the greatest extension that the spring has taken during the movement; and on the other hand, the variation of the living force of the body which is intermediary between the force and the spring. This obviously results from the fact that the difference between the work received by the first body and the work transmitted to the second, is equal to that which is due to the compressions and extensions of the spring that separates them, increased by the variation of the living force of the first body.
-
-
-\vspace{4mm}
-\textbf{36. The consideration of forces produced by a spring, or by any kind of mutual reactions, leads to the introduction of a quantity whose notion is very useful in the theory of work.}
-\vspace{4mm} 
-
-% Add the section to the table of contents
-\addcontentsline{toc}{section}{36. The consideration of forces produced by a spring, or by any kind of mutual reactions, leads to the introduction of a quantity whose notion is very useful in the theory of work.}
-
-
-If \( R \) denotes a force of mutual reaction, and \( r \) the distance that
-
-\newpage
-(45)
-separates the points, we will call stiffness, in this reaction, the quantity \( \frac{dR}{dr} \) which measures the rapidity with which the force \( R \) grows or decreases with the variation of distance.
 
 
 
@@ -965,5 +119,494 @@ separates the points, we will call stiffness, in this reaction, the quantity \( 
 
 \backmatter
 \addcontentsline{toc}{chapter}{Index}
+
+% =========================
+% Coriolis — Original title page
+% =========================
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+{\Huge\bfseries ON THE CALCULATION}\\[2mm]
+{\Huge\bfseries OF THE EFFECT}\\[2mm]
+{\Huge\bfseries OF MACHINES,}\\[4mm]
+{\large\bfseries or}\\[4mm]
+{\Large\bfseries CONSIDERATIONS ON THE USE OF MOTORS}\\[2mm]
+{\Large\bfseries AND ON THEIR EVALUATION,}\\[4mm]
+{\large\bfseries TO SERVE AS AN INTRODUCTION TO THE SPECIAL STUDY OF MACHINES;}\\[10mm]
+
+{\large By Coriolis, Engineer of Bridges and Roads.}\\[18mm]
+
+{\Large PARIS,}\\[2mm]
+{\large CARILIAN-GOEURY, BOOKSELLER}\\
+{\small OF THE ROYAL CORPS OF BRIDGES AND ROADS AND OF MINES,}\\
+{\small QUAI DES AUGUSTINS, No. 41.}\\[6mm]
+{\large 1829}
+\end{center}
+
+
+
+% =========================
+% Coriolis — Original p. I
+% =========================
+\newpage
+
+\begin{center}
+{\Huge\bfseries NOTICE}
+\end{center}
+
+\setlength{\parindent}{20pt}
+
+I have proposed in this work to present all the general considerations that tend to clarify questions concerning the economy of what is commonly called \textit{mechanical force} or \textit{mechanical power}, and to provide means of easily recognizing what are the advantages and disadvantages of certain arrangements in the construction of a machine. I believe that after reading this memoir one will be in a position to proceed suitably in all researches of calculation and experiment that relate to this subject.
+
+The special treatises that have been published up to the present on machines have not completely developed the theory of the use of motors, which in fact seems more naturally to belong within the teaching of rational mechanics. On the other hand, the works that treat of that science contain almost nothing on this theory. I have tried to fill this gap, and thus to provide a useful complement to the mechanics courses of the École Polytechnique, while at the same time offering an introduction to those of the application schools.
+
+The table of contents will show more particularly which questions I have treated; I think that they will present no difficulties to persons who have some notions of infinitesimal analysis and of mechanics. If, however, one wishes to pass over calculations that one would not follow with sufficient ease, one may do so without inconvenience; a simple reading of all the rest will suffice to give the principal notions on the theory of machines(*).
+
+\vspace{2mm}
+
+\noindent (*) I have indicated in the table, by an asterisk, the numbers of the articles that are not necessary to the understanding of the rest of the work, and that one may pass over if one wishes. Even by reading only the first chapter, the third up to Article 73, and the fourth from Article 130 onward, one will already acquire useful notions on machines.
+
+% Translation note:
+% - "Avertissement" rendered as "Notice" (common in French books of this period).
+% - "force ou puissance mécanique" rendered as "mechanical force or mechanical power" to preserve the author’s pairing rather than modernizing.
+
+% =========================
+% Coriolis — Original p. II
+% =========================
+\newpage
+
+This Memoir was to be the beginning of a more extensive work which I had undertaken long ago, but which other occupations have obliged me to abandon. I had communicated, in 1819, this first part to several persons, among others to Messrs. Mallet, Bélanger, and Drappier, engineers; to several students of the École Polytechnique; and later to M. Ampère in 1820, and to M. Poncelet in 1824. As I no longer foresee that I shall be able to continue this work; as moreover the continuation that it would have required for the special study of machines will be found in the courses that learned professors are about to publish for the application schools of the public services; and as, in addition, the researches on the small vibrations of bodies, which should complete the theory, are being undertaken by distinguished geometers; I have resolved to publish this first Memoir, imperfect though it is, and to give it, with very slight changes, as I had composed it ten years ago: I have added since only a few calculations on the use of wind and of steam.
+
+In my first work I had arrived at considerations which seemed to me new in certain respects. In fact, to my knowledge, there existed on this subject only the work of Carnot and that of M. Gueniveau (*); but at the same time that I was occupied with this theory, Petit inserted in the \textit{Annales de Physique} a succinct Memoir on the use of the principle of \textit{living forces}; and shortly afterward M. Navier published his useful and learned Notes on Bélidor’s \textit{Hydraulic Architecture}. These publications have deprived me today of any priority on certain ideas where it was natural to arrive at the same conclusions, so that in several points this little work will differ from what has been written on the same subject only by the manner in which those same points are treated. Nevertheless, I have thought that it would not be without usefulness to gather together and to present under another form all the considerations that relate to a theory as important as that of machines (*).
+
+\vspace{3mm}
+
+\noindent (*) I have learned only recently of an article published in 1815 by M. Burdin in No.\ 221 of the \textit{Journal des Mines}, in which this engineer gave very sound considerations on machines that, I believe, had not yet been presented so clearly.
+
+% Source: Du calcul de l'effet des machines_pages II, III.pdf :contentReference[oaicite:0]{index=0}
+
+
+% =========================
+% Coriolis — Original p. III
+% =========================
+\newpage
+
+I have employed in this Work several new denominations: I designate by the name of \textit{work} the quantity that is rather commonly called \textit{mechanical power}, \textit{quantity of action}, or \textit{dynamic effect} (**), and I propose the name \textit{dynamode} for the unit of this quantity. One will find in Articles (16), (30), and (31) the reasons that have led me to make use of these denominations. I have permitted myself another slight innovation in calling \textit{living force} the product of the weight by the height due to the velocity. This living force is only half of the product of what has until now been designated by that name, that is to say, of the mass by the square of the velocity. If one had experienced, as I have, how much students are embarrassed by poorly chosen denominations, I believe one would not censure this slight change. It is very inconvenient to have a name for the double of a quantity that one encounters at every instant. If formerly the name of \textit{living force} was given to the product of the mass by the square of the velocity, it is because attention was not directed toward \textit{work}, and because it was not the product of the weight by the height due to the velocity that one had most often to designate. All practitioners today understand by \textit{living force} the work that can be produced by the velocity acquired by a body; and certainly, whatever one does, there would always be two usages in practice, one applying to a quantity double of the other, if geometers did not adopt the latter, which is in reality the more convenient for the study of the motion of machines. Besides, when
+
+\vspace{3mm}
+
+\noindent (*) M. Bélanger, engineer of Bridges and Roads, author of a very interesting memoir on the flow of water in canals, who has successfully occupied himself with the theory of machines and its applications, was kind enough to review my manuscript and assist me with his advice; I owe to him several improvements that have introduced greater clarity and order into this Work.
+
+\vspace{2mm}
+
+\noindent (**) The word \textit{work} comes so naturally in the sense in which I employ it that, although it has neither been proposed nor recognized as a technical expression, it has nevertheless been employed incidentally by M. Navier in his Notes on Bélidor, and by M. de Prony in his Memoir on the Experiments of the Gros-Caillou Machine.
+
+% Translation notes:
+% - "forces vives" rendered as "living forces" (plural preserved).
+% - Coriolis’ redefinition of "force vive" preserved as "living force."
+% - "puissance mécanique" rendered as "mechanical power" without modernization.
+% =========================
+% Coriolis — Original p. IV
+% =========================
+\newpage
+
+Even if one did not wish to introduce this new denomination into rational Mechanics, might one not still permit oneself to use it in works on machines? If readers are well versed in rational Mechanics, this change will not inconvenience them; on the other hand, it will certainly be advantageous for a far greater number of persons who study machines without pursuing further the study of Mechanics.
+
+Some time ago, certain members of the Academy of Sciences having requested that a choice be made for the unit of work or of mechanical power, I then submitted a note to propose the denominations of which I have just spoken. The celebrated Laplace, who was part of a commission appointed for this purpose, was kind enough to tell me that he did not believe that the Academy ought to take the initiative in choosing names, that it could only sanction usage when it began to become established. According to that illustrious geometer, it belonged to those who concerned themselves with machines to attempt to introduce the terms that they judged most suitable.
+
+In accordance with an opinion of such great weight, it seemed to me that I could not be blamed for proposing and employing denominations that appeared to me clearer and more appropriately chosen in their etymology.
+
+% Source: Du calcul de l'effet des machines_pages IV and first TOC.pdf :contentReference[oaicite:0]{index=0}
+
+
+% =========================
+% Coriolis — Original p. (First TOC page)
+% =========================
+\newpage
+
+\begin{center}
+{\Large\bfseries TABLE OF CONTENTS}
+\end{center}
+
+\noindent\textit{Note.} The articles marked with an asterisk are those that relate less directly to the general ideas on the effect of machines, and which one may omit if one wishes.
+
+\vspace{4mm}
+
+\begin{center}
+\textbf{CHAPTER ONE}
+\end{center}
+\vspace{2mm}
+\noindent
+\textit{Articles}\hfill\textit{Pages}
+
+\vspace{2mm}
+
+\noindent
+1. Different points of view under which Machines may be studied.\dotfill 1\\
+3. Statements of the physical principles that serve as the bases of Dynamics.\dotfill 3\\
+4. On the motion of a point.\dotfill 4\\
+6. What is meant by connections in Dynamics.\dotfill 6\\
+7. General principle of Dynamics.\dotfill 8\\
+8. On the principle of virtual velocities.\dotfill 11\\
+13. Equation of living forces.\dotfill 14\\
+14. On the quantity that appears in the equation of living forces.
+\dotfill 15\\
+16. Denomination of dynamical work, or simply of work, proposed for this \\ quantity.\dotfill 16\\
+17. What is called living force in this Work.\dotfill 17\\
+18. Principle on the transmission of work, and modifications of the statement in different cases.\dotfill 18\\
+23. When friction is neglected, the denomination of principle of the transmission of work is even better justified.\dotfill 25\\
+24. Origin of the denomination of living force.\dotfill 25\\
+25. Effect of machines relative to work.\dotfill 26\\
+26. How work serves as a basis for the evaluation of a motor.\dotfill 27\\
+28. Analogy between work and the volume of materials.\dotfill 30\\
+29. Time is an element that remains outside of work.\dotfill 31\\
+31. On the unit of work; denomination of dynamode proposed for this unit.\dotfill 33\\
+32. Distinction between work and the horizontal transport of burdens.\dotfill 34
+
+\vspace{6mm}
+
+\begin{center}
+\textbf{CHAPTER TWO}
+\end{center}
+
+\noindent
+33. Calculation of the work due to the gravity of bodies in motion.\dotfill 36\\
+34. On the work due to mutual reactions, such as springs, attractions, or \\  repulsions.\dotfill 40\\
+35. On elastic or imperfectly elastic reactions or springs.\dotfill 43\\
+36. On stiffness.\dotfill 44
+
+% Translation note:
+% - Preserved "living forces" in plural for "forces vives."
+% - Maintained article numbering exactly as printed.
+% - Page numbers rendered with \dotfill for visual fidelity.
+% =========================
+% Coriolis — Original p. VI
+% =========================
+\newpage
+
+\begin{center}
+\textbf{CHAPTER TWO (continued)}
+\end{center}
+
+\noindent
+37. Influence of stiffness in the distribution of work during the compression or extension of several reactions or springs placed one after another.\dotfill 45\\
+40. Influence of masses on the distribution of work in certain particular cases.\dotfill 48\\
+41. On the work produced by the pressure of a gas or of a vapor upon a movable envelope whose motion is not too rapid.\dotfill 49\\
+43. Calculation of the work that may be collected by employing in different ways the vapor obtained with a given quantity of heat, such as that furnished by the combustion of one kilogram of coal.\dotfill 52\\
+44. On the pressure produced on a solid canal by a fluid moving in it with constant velocity.\dotfill 59\\
+45. Approximate formula for the pressure produced by a fluid vein against a fixed plane.\dotfill 62\\
+46. Approximate formula for the pressure produced against a plane surface immersed in an indefinite current.\dotfill 66\\
+47. On the work produced, by a fluid in motion, on a canal and on a movable plane.\dotfill 67\\
+48. On the resistant work produced by friction.\dotfill 70\\
+50. Equality between the quantities of work produced by equivalent systems of forces.\dotfill 75\\
+51. On the work absorbed by friction in a brake.\dotfill 75\\
+52. On the calculation of living forces; decomposition of the living force into two terms, one relative to the common motion, and the other to the relative motion.\dotfill 77\\
+54. Simplification of the calculation of living forces in the permanent motion of fluids.\dotfill 80\\
+55. Extension of the principle of the transmission of work when one abstracts from a uniform motion that carries along a machine.\dotfill 81\\
+*56. Application to motion in a movable canal.\dotfill 85\\
+*58. The principle of the transmission of work still holds for relative motion with respect to arcs of constant direction passing through the center of gravity of a system in motion.\dotfill 87
+
+\vspace{6mm}
+
+\begin{center}
+\textbf{CHAPTER THREE}
+\end{center}
+
+\noindent
+59. Considerations on the physical constitution of solid bodies.\dotfill 91\\
+61. How the principle of the transmission of work may be extended to machines in their physical nature, and in what cases solid bodies can no longer be considered invariable in form.\dotfill 94\\
+62. Remarks on the quantities of work due to the mutual actions of particles.\dotfill 95\\
+65. Considerations on linear shock.\dotfill 97\\
+66. On the shock of two solid bodies, and particularly of elastic bodies.\dotfill 101\\
+67. Considerations on elasticity.\dotfill 103\\
+69. What may be called the work at each point of a moving body.\dotfill 106\\
+71. Considerations on the losses of work due to friction.\dotfill 107
+
+% Source: Du calcul de l'effet des machines_pages VI, VII.pdf :contentReference[oaicite:0]{index=0}
+
+
+% =========================
+% Coriolis — Original p. VII
+% =========================
+\newpage
+
+\noindent
+72. Inductions that may be drawn from the observation of vibrations. General ideas on machines in their true nature.\dotfill 108\\
+73. Approximate calculations for the losses of work in the shock of rotational systems when friction is neglected.\dotfill 111\\
+75. Some considerations on cases where friction cannot be neglected in these shocks; what diminishes their influence.\dotfill 118\\
+*76. Considerations on the Dynamics of quantities of motion in the shock of bodies, and on the principle of d’Alembert.\dotfill 120\\
+*78. On the manner of understanding statements in Dynamics relative to quantities of motion when friction is taken into account.\dotfill 124\\
+*79. On the Statics and Dynamics of shocks.\dotfill 126\\
+*82. On Carnot’s Theorem.\dotfill 129\\
+83. How the principle of the transmission of work extends to the motion of incompressible fluids.\dotfill 132\\
+*84. Application of the principle of the transmission of work to the flow of liquids.\dotfill 135\\
+85. On the work received by a movable vessel into which a liquid vein enters.\dotfill 136\\
+87. On the case where the velocity of the vein is not in the same direction as that of the vessel.\dotfill 140\\
+88. The pressure borne by the vessel is deduced from the expression that gives the transmitted work.\dotfill 141\\
+89. How the principle of the transmission of work extends to elastic fluids.\dotfill 142\\
+*90. Application to the flow of air.\dotfill 145\\
+91. On the work necessary to expel, by means of a blowing machine, a certain volume of air through a given orifice.\dotfill 148\\
+*92. On the pressure received by a movable plane exposed to a current of air.\dotfill 150\\
+*93. On the work received by a movable plane through the action of the wind, taking into account the reduction of pressure that occurs behind.\dotfill 156
+
+\vspace{6mm}
+
+\begin{center}
+\textbf{CHAPTER FOUR}
+\end{center}
+
+\noindent
+94. On the different parts of machines intended to produce continuous effects.\dotfill 158\\
+95. Theory of flywheels.\dotfill 159\\
+96. On the work of waterfalls.\dotfill 165\\
+98. On the unit of measure for the work produced by waterfalls as well as other continuous motors.\dotfill 166\\
+100. On bucket wheels, that is to say, those in which the water acts largely by its weight.\dotfill 168\\
+102. On paddle wheels, that is to say, those in which the water acts after having acquired almost all the velocity due to the fall.\dotfill 174\\
+103. On the case where the paddles or blades are perfectly fitted.\dotfill 175\\
+104. On the case where the paddles are not fitted and allow water to escape freely along the sides of the paddles.\dotfill 176\\
+105. On wheels in which the blades are curved vertically.\dotfill 182\\
+106. On paddle wheels when these are wider than the current.\dotfill 183\\
+107. On paddle wheels in an indefinite current.\dotfill 185
+
+% Translation notes:
+% - Preserved article numbering and asterisk markers exactly as printed.
+% - "forces vives" consistently rendered as "living forces."
+% - Maintained dot leaders for visual fidelity to the original Table of Contents.
+
+% =========================
+% Coriolis — Original p. VIII
+% =========================
+\newpage
+
+\noindent
+108. The speed appropriate to the maximum work to be collected becomes smaller when one evaluates this work only after deducting the losses from its transmission up to a certain point of the machine.\dotfill 186\\
+109. Considerations on the establishment of hydraulic wheels and on the means of making them take, in the different cases, the speed corresponding to the maximum for the work to be collected.\dotfill 189\\
+114. On the work produced by men and animals, and on the means of collecting it.\dotfill 196\\
+118. On some numerical results concerning this work.\dotfill 201\\
+119. On the means of collecting the work of steam.\dotfill 202\\
+120. In a steam engine, with or without expansion, there exists, for the work to be collected, a maximum which is obtained by placing the temperature of combustion in a suitable ratio with that of the steam.\dotfill 203\\
+121. Means of ensuring that the piston takes the appropriate speed.\dotfill 207\\
+122. On some experimental results concerning the quantities of work produced by steam engines.\dotfill 207\\
+*124. On windmills; establishment of the formulas for finding the elements that correspond to the maximum work to be collected.\dotfill 210\\
+*125. Numerical determination of these elements.\dotfill 217\\
+*126. On the maximum relative to angular velocity only.\dotfill 220\\
+*127. Comparison between the work received by the sails according to theory and according to the experiments of Coulomb.\dotfill 225\\
+*129. How it is possible to make the sails take the speed corresponding to the maximum.\dotfill 229\\
+130. General considerations on the employment of motors.\dotfill 250\\
+131. On the manner of stating precisely the results that indicate the degree of perfection of a machine intended to collect or transmit work.\dotfill 251\\
+132. On the manner of establishing the bases of contracts concerning motors.\dotfill 252\\
+133. Usefulness of a mechanism suitable for measuring, at a certain point of a machine, the work transmitted; considerations on this subject.\dotfill 253\\
+134. Considerations on motion transfers and on the experiments to be made in order to evaluate them.\dotfill 236\\
+135. On the different useful effects; how they may be produced while consuming more or less work; distinction between the losses that relate to these effects and those that do not.\dotfill 258\\
+136. On experiments concerning the consumption of work required by the various useful effects.\dotfill 240
+
+\vspace{6mm}
+
+\begin{center}
+\textbf{TABLES}
+\end{center}
+
+\noindent
+1°. On the quantities of work required for various useful effects performed by means of machines, according to the most approximate results known today.\dotfill 244\\
+2°. On the quantities of work that may be collected from the different motors.\dotfill 255
+
+\vspace{2mm}
+
+\begin{center}
+\textbf{NOTE}
+\end{center}
+
+\noindent
+On a mechanism suitable for measuring with precision the work transmitted by a machine.\dotfill 265
+
+% Source: Du calcul de l'effet des machines_pages VIII, 1.pdf :contentReference[oaicite:0]{index=0}
+
+
+% =========================
+% Coriolis — Original p. 1
+% =========================
+\newpage
+
+\begin{center}
+{\Large\bfseries ON THE CALCULATION}\\[2mm]
+{\Large\bfseries OF THE EFFECT}\\[2mm]
+{\Large\bfseries OF MACHINES}
+\end{center}
+
+\vspace{4mm}
+
+\begin{center}
+{\large\bfseries CHAPTER ONE}
+\end{center}
+
+\vspace{4mm}
+
+\noindent
+Review of the Preliminaries of Dynamics. — Equation of \textit{living forces}. — Principle derived from it for Machines considered from a rational point of view. — Definition of Work as a quantity. — How Work serves to measure the value of a faculty of motion or of a motor. — On the Unit of work. — Distinction between Work and the horizontal transport of burdens.
+
+\vspace{6mm}
+
+\noindent
+(1) Machines may be studied from three different points of view: 1°. by considering the forces that arise in the state of equilibrium, as is done in the lever, the screw, the pulleys, and in all machines intended rather to exert great efforts than to produce motion; this is the domain of Statics. 2°. By considering displacement alone in order to understand the dependencies of motion, as is done in the study of the different modes of transmission of motion and of all mechanisms whose object is to substitute for the dexterity of man; this is the domain of Geometry. 3°. Finally, by considering at once the forces and the motion, as is done in machines intended for manufactures of every kind, where the economy of the motor must be taken into account; this is the do-
+\newpage
+% ----- Original Page 2 -----
+
+marne of Dynamics. It is under this latter point of view alone that we shall study machines.
+
+To be properly understood, it is necessary to recall briefly a few preliminary notions of Mechanics, and to determine clearly in what sense various terms in use in this science will be employed.
+
+The first idea we have of force arises from the sensation we experience when we make an effort to displace a body or to modify its velocity, whether in magnitude or in direction. Inanimate bodies, producing under certain circumstances effects similar to the force of our limbs, we have extended the conception of force to cases where these agents are substituted for our own effort to produce similar effects. From this it followed that forces were compared, and consequently introduced as quantities into calculation. In this respect, force is somewhat like heat, whose first idea was also that of a sensation; it too has been introduced into calculation through its effects in dilating bodies.
+
+(2) Several geometers have considered two kinds of forces. The first, which is that of which I have just spoken, cannot produce instantaneously a perceptible change either in the magnitude or in the direction of the velocity of the body it solicits; this force may be assimilated to the action of a weight or of a spring; it is the only one we shall consider in this work. The second is that which is supposed capable of instantaneously modifying by a finite amount the velocity of a body, either in magnitude or in direction. Although it is recognized that, strictly speaking, this instantaneous modification cannot be admitted, nevertheless, since with a very great force one produces in a very short time perceptible changes, one has permitted oneself to suppose the existence of forces of the kind we have just indicated, conceiving them as, so to speak, infinitely great, yet comparable among themselves. We shall return later, when speaking of shock, to the use that may be made of this dynamics; we shall see that it is founded more upon a certain metaphysics than upon true physics.
+
+Since the consideration of these instantaneous forces is not necessary for what we have to set forth on the theory of machines, we shall not employ them. In what follows, the word
+\newpage
+% ----- Original Page 3 -----
+
+force shall therefore apply only to that which is analogous to weights, that is to say, to what in several cases is called pressure, tension, or traction. In this sense, a force can never sensibly change the direction or magnitude of a velocity without causing it to pass through all intermediate states, and without this change requiring an appreciable time.
+
+(3) Let us recall briefly what experience has taught concerning the dependence that exists between force and motion.
+
+All observations on motion concur in establishing the following laws:
+
+1°. A body cannot change its velocity in magnitude or in direction unless it is subjected to a force; this is what is called the law of inertia.
+
+2°. In order to produce upon the same body greater or lesser increases or decreases of velocity in equal times, by acting with constant forces directed in the sense of the velocity or in the directly opposite sense, these forces must be proportional to these increases or decreases of velocity; this is the law of proportionality between forces and variations of velocity.
+
+3°. If a body already possessing a velocity comes to be acted upon by a force, and if its motion is referred to three axes passing through the position it would have occupied if this force had not existed; the motion with respect to these axes, whose origin is movable, will be the same as if the body had had no velocity when the force began to act upon it, and the motion had thus been referred to fixed axes. This is the law of independence between acquired motion and the effect of forces.
+
+4°. To produce upon different bodies the same increase of velocity in a given time, forces of different intensities are required. These different intensities, which give rise in us to the idea of masses (*), are proportional to the weights of the bodies taken in the same place of
+
+{\let\thefootnote\relax\footnotetext{(*) It is often said that mass is the quantity of matter of a body; but upon reflection, one immediately sees that as soon as bodies of different natures are involved, and volume can no longer be taken as a measure of mass, we have no other measure of this quantity than the force capable of producing the same accelerated motion.}}
+
+\newpage
+% ----- Original Page 4 -----
+
+earth; this is the law of proportionality between masses and weights
+for the same place. Since, in the calculation of machines, one does not
+have to consider these weights at different places, one may, by virtue
+of this law, take weights as quantities proportional to masses.
+
+(4) It is upon these observational laws that the entire dynamics of a
+material point is founded. It is easy to conclude from them, for motion
+in a straight line, that if one takes as the unit of force any weight,
+for example the kilogram, a body whose weight is $p$, being subjected
+to a force $F$, which acts with constant intensity during a time $t$
+in the direction of motion, will acquire during that time a velocity
+equal to $\dfrac{F}{p} g$, designating by $g$ the increase of velocity
+of heavy bodies falling vertically during a time $t$, that is to say,
+that which the weight $p$ acting alone would produce on the body in
+question. If the force $F$ varies with time, the velocity will be given
+by the equation
+\[
+\frac{dv}{dt} = \frac{F}{p} g.
+\]
+
+For motion in a curved line, one likewise concludes from these same
+laws that if a force $F$ has for components in the directions of three
+fixed axes the variable forces $X, Y, Z$, whose unit is the kilogram,
+and if it acts alone upon a free material point whose weight,
+expressed in kilograms, is represented by $p$, it will produce a motion
+such that at each instant one has the equations
+\[
+\frac{d^2 x}{dt^2} = \frac{X}{p} g,
+\qquad
+\frac{d^2 y}{dt^2} = \frac{Y}{p} g,
+\qquad
+\frac{d^2 z}{dt^2} = \frac{Z}{p} g,
+\]
+where $x, y, z$ are the coordinates of the material point. Thus, the
+position of this point and its velocities along the axes being known
+at a certain instant, it will suffice to be able to express at each
+instant the components $X, Y, Z$ of the force acting on the free point,
+in order to deduce, by integration of these three equations, complete
+knowledge of the motion.
+
+By means of various considerations developed in treatises on Mechanics,
+one concludes from these equations that if one decomposes the force $F$
+into two parts, one acting along the tangent to the curve described,
+and the other along the normal to this curve, the component along the
+tangent will have for expression
+\(
+\frac{p}{g} \frac{d^2 s}{dt^2},
+\)
+designating 
+\newpage
+% ----- Original Page 5 -----
+by $s$ the arc described by the moving point; its normal
+component will have for expression
+\(
+\frac{p}{g} \frac{v^2}{r},
+\)
+designating by $v$ the velocity and by $r$ the radius of curvature (*).
+
+The ratio $\frac{p}{g}$ is what is called the mass; it is ordinarily
+designated, for brevity, by $m$; but it has seemed to us that, in order
+to avoid the errors that might arise in applications from the use of
+the mass $m$, it was more suitable, in this work, to allow the weights
+to appear explicitly, so that the kilogram may everywhere be the unit
+of force.
+
+
+(5) In order to pass to the dynamics of a system of material points
+connected together in any manner whatsoever, that is to say, to the
+determination of the motion of a machine, one must admit that the
+same relations which must exist between forces so that they produce
+no motion when acting upon points at rest connected by certain
+geometrical conditions, are also those which must exist so that these
+forces do not modify in any way the motions that these same points,
+connected in the same manner, would already have if they were acted
+upon by other forces.
+
+For example, if two forces balance each other in a lever at rest,
+when they are in the ratio of their distances from the fixed point,
+they will in no way modify the motion which the same points would
+have if solicited by other forces.
+
+{\let\thefootnote\relax\footnote{(*)
+One easily establishes this decomposition in the following manner.
+The principles of differential calculus give
+\[
+\frac{d^2 x}{dt^2}
+=
+\frac{d}{dt}\left(\frac{dx}{dt}\right)
+=
+\frac{d}{dt}\left(\frac{dx}{ds} \frac{ds}{dt}\right)
+=
+\frac{d^2 x}{ds^2} \left(\frac{ds}{dt}\right)^2
++
+\frac{dx}{ds} \frac{d^2 s}{dt^2}.
+\]
+If one denotes by $\alpha$ the angle which the radius of curvature $r$
+of the curve described by the moving point makes with the axis of $x$,
+and by $a$ the angle which the tangent to this curve makes with the
+same axis, one has
+\[
+\cos \alpha = \frac{d^2 x}{ds^2} r,
+\qquad
+\cos a = \frac{dx}{ds},
+\]
+thus the preceding equation becomes
+\[
+\frac{d^2 x}{dt^2}
+=
+\frac{1}{r} \left(\frac{ds}{dt}\right)^2 \cos \alpha
++
+\frac{d^2 s}{dt^2} \cos a.
+\]
+Since one has similar equations for $\dfrac{d^2 y}{dt^2}$ and
+$\dfrac{d^2 z}{dt^2}$, one concludes that the force which produces
+the motion of the moving point decomposes into two forces
+\[
+\frac{p}{g} \frac{1}{r}\left(\frac{ds}{dt}\right)^2,
+\qquad
+\frac{p}{g} \frac{d^2 s}{dt^2},
+\]
+one tangent and the other normal to the curve described.
+}}
+
+
+
 
 \end{document}
