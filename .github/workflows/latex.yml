@@ -1,35 +1,40 @@
-name: LaTeX Build
+name: Build LaTeX PDF
 
-on: push
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - "**/*.pdf"
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Set up LaTeX
-      uses: xu-cheng/latex-action@v2
-      with:
-        latexmk_use_xelatex: true
-        root_file: stb-template.tex
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v2
+        with:
+          latexmk_use_xelatex: true
+          root_file: stb-template.tex
 
-    - name: Upload PDF to Actions
-      uses: actions/upload-artifact@v3
-      with:
-        name: book-pdf
-        path: stb-template.pdf
+      - name: Commit PDF back to repo (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-    - name: Commit and push PDF to repository
-      if: success()
-      env:
-        GH_PAT: ${{ secrets.GH_PAT }}
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
-        git remote set-url origin https://x-access-token:${GH_PAT}@github.com/<OWNER>/<REPO>.git
-        git add stb-template.pdf
-        git commit -m 'Add generated PDF'
-        git push origin HEAD:main
+          git add stb-template.pdf
+
+          # Don't fail if the PDF didn't change
+          if git diff --cached --quiet; then
+            echo "No PDF changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update compiled PDF"
+          git push
